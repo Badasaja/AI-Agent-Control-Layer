@@ -1,0 +1,36 @@
+RS_RISK_TOKEN_V1: # 예시 TOKEN Spec (최초 생성)
+  spec_id: "RS_RISK_TOKEN_V1"
+  associated_topic: "Financial_Risk"
+  fields:
+    text:
+      type: "string"
+      max_length: 100
+    risk_score:
+      type: "float"
+      min_value: 0.0
+      max_value: 1.0
+      required: true
+    timestamp:
+      type: "string"
+      required: false
+RS_RISK_TOKEN_V2: # TOKEN Spec v2
+  spec_id: "RS_RISK_TOKEN_V2"
+  associated_topic: "Financial_Risk related token with enhanced traceability"
+  fields:
+    original_query: # 최초 질문이 입력될 필요
+      type: "string"
+      required : true
+    text:
+      type: "string"
+      max_length: 100
+    risk_score:
+      type: "float"
+      min_value: 0.0
+      max_value: 1.0
+      required: true
+    timestamp:
+      type: "string"
+      required: false
+    metadata: # 시작할때 자동 선언 필요
+      type: "json"
+      required: true

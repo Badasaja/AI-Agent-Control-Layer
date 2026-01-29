@@ -1,0 +1,6 @@
+
+## -------------------------- 파이프라인 및 데이터 패턴 --------------------------- ##
+storage:
+  format: "parquet"    # or "csv.gz"
+  compression: "snappy"
+  dual_write: false

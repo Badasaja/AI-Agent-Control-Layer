@@ -1,0 +1,55 @@
+2026-01-29 17:20:51 - core.logging_utils - INFO - [logging_utils.py:90] - Logging initialized - logs directory: c:\Users\kakao\Desktop\AI_Agent\Semantic Layer\logs
+2026-01-29 17:20:51 - core.logging_utils - INFO - [logging_utils.py:91] - Log rotation configured: max 10.0MB per file, keeping 5 backups
+2026-01-29 17:25:25 - core.logging_utils - INFO - [logging_utils.py:90] - Logging initialized - logs directory: c:\Users\kakao\Desktop\AI_Agent\Semantic Layer\logs
+2026-01-29 17:25:25 - core.logging_utils - INFO - [logging_utils.py:91] - Log rotation configured: max 10.0MB per file, keeping 5 backups
+2026-01-29 17:25:55 - core.logging_utils - INFO - [logging_utils.py:90] - Logging initialized - logs directory: c:\Users\kakao\Desktop\AI_Agent\Semantic Layer\logs
+2026-01-29 17:25:55 - core.logging_utils - INFO - [logging_utils.py:91] - Log rotation configured: max 10.0MB per file, keeping 5 backups
+2026-01-29 17:29:05 - core.logging_utils - INFO - [logging_utils.py:90] - Logging initialized - logs directory: c:\Users\kakao\Desktop\AI_Agent\Semantic Layer\logs
+2026-01-29 17:29:05 - core.logging_utils - INFO - [logging_utils.py:91] - Log rotation configured: max 10.0MB per file, keeping 5 backups
+2026-01-29 17:35:29 - core.logging_utils - INFO - [logging_utils.py:90] - Logging initialized - logs directory: c:\Users\kakao\Desktop\AI_Agent\Semantic Layer\logs
+2026-01-29 17:35:29 - core.logging_utils - INFO - [logging_utils.py:91] - Log rotation configured: max 10.0MB per file, keeping 5 backups
+2026-01-29 17:38:49 - __main__ - INFO - [3492039095.py:67] - [Validator] 토큰 검증 시작 (Spec: RS_RISK_TOKEN_V1)
+2026-01-29 17:39:30 - core.logging_utils - INFO - [logging_utils.py:90] - Logging initialized - logs directory: c:\Users\kakao\Desktop\AI_Agent\Semantic Layer\logs
+2026-01-29 17:39:30 - core.logging_utils - INFO - [logging_utils.py:91] - Log rotation configured: max 10.0MB per file, keeping 5 backups
+2026-01-29 17:39:33 - __main__ - INFO - [3492039095.py:67] - [Validator] 토큰 검증 시작 (Spec: RS_RISK_TOKEN_V1)
+2026-01-29 17:41:04 - validators.validator - INFO - [validator.py:67] - [Validator] 토큰 검증 시작 (Spec: RS_RISK_TOKEN_V1)
+2026-01-29 17:41:59 - validators.validator - INFO - [validator.py:67] - [Validator] 토큰 검증 시작 (Spec: RS_RISK_TOKEN_V1)
+2026-01-29 17:41:59 - validators.validator - ERROR - [validator.py:99] - 'risk_score' value 1.5 > max 1.0
+2026-01-29 17:42:04 - validators.validator - INFO - [validator.py:67] - [Validator] 토큰 검증 시작 (Spec: RS_RISK_TOKEN_V1)
+2026-01-29 17:42:04 - validators.validator - ERROR - [validator.py:99] - 'risk_score' value 1.5 > max 1.0
+2026-01-29 17:42:46 - validators.validator - INFO - [validator.py:67] - [Validator] 토큰 검증 시작 (Spec: RS_RISK_TOKEN_V1)
+2026-01-29 17:42:46 - validators.validator - ERROR - [validator.py:99] - 'risk_score' value 1.5 > max 1.0
+2026-01-29 17:43:33 - core.logging_utils - INFO - [logging_utils.py:90] - Logging initialized - logs directory: c:\Users\kakao\Desktop\AI_Agent\Semantic Layer\logs
+2026-01-29 17:43:33 - core.logging_utils - INFO - [logging_utils.py:91] - Log rotation configured: max 10.0MB per file, keeping 5 backups
+2026-01-29 17:43:40 - validators.validator - INFO - [validator.py:67] - [Validator] 토큰 검증 시작 (Spec: RS_RISK_TOKEN_V1)
+2026-01-29 17:43:41 - validators.validator - INFO - [validator.py:67] - [Validator] 토큰 검증 시작 (Spec: RS_RISK_TOKEN_V1)
+2026-01-29 17:43:42 - validators.validator - INFO - [validator.py:67] - [Validator] 토큰 검증 시작 (Spec: RS_RISK_TOKEN_V1)
+2026-01-29 17:43:42 - validators.validator - INFO - [validator.py:67] - [Validator] 토큰 검증 시작 (Spec: RS_RISK_TOKEN_V1)
+2026-01-29 17:43:42 - validators.validator - ERROR - [validator.py:99] - 'risk_score' value 1.5 > max 1.0
+2026-01-29 17:45:56 - core.logging_utils - INFO - [logging_utils.py:90] - Logging initialized - logs directory: c:\Users\kakao\Desktop\AI_Agent\Semantic Layer\logs
+2026-01-29 17:45:56 - core.logging_utils - INFO - [logging_utils.py:91] - Log rotation configured: max 10.0MB per file, keeping 5 backups
+2026-01-29 17:45:57 - core.logging_utils - INFO - [logging_utils.py:90] - Logging initialized - logs directory: c:\Users\kakao\Desktop\AI_Agent\Semantic Layer\logs
+2026-01-29 17:45:57 - core.logging_utils - INFO - [logging_utils.py:91] - Log rotation configured: max 10.0MB per file, keeping 5 backups
+2026-01-29 17:46:32 - validators.validator - INFO - [validator.py:67] - [Validator] 토큰 검증 시작 (Spec: RS_RISK_TOKEN_V1)
+2026-01-29 17:46:33 - validators.validator - INFO - [validator.py:67] - [Validator] 토큰 검증 시작 (Spec: RS_RISK_TOKEN_V1)
+2026-01-29 17:46:33 - validators.validator - ERROR - [validator.py:99] - 'risk_score' value 1.5 > max 1.0
+2026-01-29 17:46:42 - validators.validator - INFO - [validator.py:67] - [Validator] 토큰 검증 시작 (Spec: RS_RISK_TOKEN_V1)
+2026-01-29 17:46:42 - validators.validator - ERROR - [validator.py:75] - Missing Required Field: 'risk_score'
+2026-01-29 17:46:45 - validators.validator - INFO - [validator.py:67] - [Validator] 토큰 검증 시작 (Spec: RS_RISK_TOKEN_V1)
+2026-01-29 17:46:45 - validators.validator - ERROR - [validator.py:75] - Missing Required Field: 'risk_score'
+2026-01-29 17:49:45 - validators.validator - INFO - [validator.py:67] - [Validator] 토큰 검증 시작 (Spec: RS_RISK_TOKEN_V1)
+2026-01-29 17:49:46 - validators.validator - INFO - [validator.py:67] - [Validator] 토큰 검증 시작 (Spec: RS_RISK_TOKEN_V1)
+2026-01-29 17:49:49 - validators.validator - INFO - [validator.py:67] - [Validator] 토큰 검증 시작 (Spec: RS_RISK_TOKEN_V1)
+2026-01-29 17:49:49 - validators.validator - ERROR - [validator.py:99] - 'risk_score' value 1.5 > max 1.0
+2026-01-29 17:49:51 - validators.validator - INFO - [validator.py:67] - [Validator] 토큰 검증 시작 (Spec: RS_RISK_TOKEN_V1)
+2026-01-29 17:49:51 - validators.validator - ERROR - [validator.py:75] - Missing Required Field: 'risk_score'
+2026-01-29 17:49:55 - validators.validator - INFO - [validator.py:67] - [Validator] 토큰 검증 시작 (Spec: RS_RISK_TOKEN_V1)
+2026-01-29 17:49:56 - validators.validator - INFO - [validator.py:67] - [Validator] 토큰 검증 시작 (Spec: RS_RISK_TOKEN_V1)
+2026-01-29 17:49:56 - validators.validator - ERROR - [validator.py:99] - 'risk_score' value 1.5 > max 1.0
+2026-01-29 17:50:50 - core.logging_utils - INFO - [logging_utils.py:89] - Logging initialized - logs directory: c:\Users\kakao\Desktop\AI_Agent\Semantic Layer\logs
+2026-01-29 17:50:50 - core.logging_utils - INFO - [logging_utils.py:90] - Log rotation configured: max 10.0MB per file, keeping 5 backups
+2026-01-29 17:50:54 - Validator - INFO - [validator.py:72] - 토큰 검증 시작 (Spec: RS_RISK_TOKEN_V1)
+2026-01-29 17:50:56 - Validator - INFO - [validator.py:72] - 토큰 검증 시작 (Spec: RS_RISK_TOKEN_V1)
+2026-01-29 17:50:56 - Validator - ERROR - [validator.py:108] - 'risk_score' value 1.5 > max 1.0
+2026-01-29 17:51:36 - Validator - INFO - [validator.py:72] - 토큰 검증 시작 (Spec: RS_RISK_TOKEN_V1)
+2026-01-29 17:51:36 - Validator - ERROR - [validator.py:108] - 'risk_score' value 1.5 > max 1.0

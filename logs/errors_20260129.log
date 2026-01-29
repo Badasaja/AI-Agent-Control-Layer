@@ -1,0 +1,12 @@
+2026-01-29 17:41:59 - validators.validator - ERROR - [validator.py:99] - 'risk_score' value 1.5 > max 1.0
+2026-01-29 17:42:04 - validators.validator - ERROR - [validator.py:99] - 'risk_score' value 1.5 > max 1.0
+2026-01-29 17:42:46 - validators.validator - ERROR - [validator.py:99] - 'risk_score' value 1.5 > max 1.0
+2026-01-29 17:43:42 - validators.validator - ERROR - [validator.py:99] - 'risk_score' value 1.5 > max 1.0
+2026-01-29 17:46:33 - validators.validator - ERROR - [validator.py:99] - 'risk_score' value 1.5 > max 1.0
+2026-01-29 17:46:42 - validators.validator - ERROR - [validator.py:75] - Missing Required Field: 'risk_score'
+2026-01-29 17:46:45 - validators.validator - ERROR - [validator.py:75] - Missing Required Field: 'risk_score'
+2026-01-29 17:49:49 - validators.validator - ERROR - [validator.py:99] - 'risk_score' value 1.5 > max 1.0
+2026-01-29 17:49:51 - validators.validator - ERROR - [validator.py:75] - Missing Required Field: 'risk_score'
+2026-01-29 17:49:56 - validators.validator - ERROR - [validator.py:99] - 'risk_score' value 1.5 > max 1.0
+2026-01-29 17:50:56 - Validator - ERROR - [validator.py:108] - 'risk_score' value 1.5 > max 1.0
+2026-01-29 17:51:36 - Validator - ERROR - [validator.py:108] - 'risk_score' value 1.5 > max 1.0
