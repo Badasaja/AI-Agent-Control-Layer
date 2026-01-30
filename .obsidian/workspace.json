@@ -4,7 +4,7 @@
     "type": "split",
     "children": [
       {
-        "id": "158f4b7b42abef48",
+        "id": "2b6cce6eac8d532a",
         "type": "tabs",
         "children": [
           {
@@ -19,6 +19,22 @@
               },
               "icon": "lucide-file",
               "title": "proj"
+            }
+          }
+        ]
+      },
+      {
+        "id": "7c2e9420da0ce738",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "55f18910413e47a0",
+            "type": "leaf",
+            "state": {
+              "type": "empty",
+              "state": {},
+              "icon": "lucide-file",
+              "title": "New tab"
             }
           }
         ]
@@ -187,17 +203,18 @@
   },
   "active": "7e4deb4aa3f38883",
   "lastOpenFiles": [
+    "For Newcomers.ipynb",
+    "entity/__pycache__/process.cpython-310.pyc",
+    "notebooks/architecture/engine데피니션.ipynb",
+    "notebooks/architecture/process데피니션.ipynb",
+    "notebooks/practice/dump.ipynb",
+    "notebooks/practice",
+    "README.md",
     "engines/execution.py",
     "engines/engine.py",
     "engines",
     "entity/__pycache__/validator.cpython-310.pyc",
     "entity/__pycache__/tokens.cpython-310.pyc",
-    "entity/__pycache__/validators.cpython-310.pyc",
-    "entity/__pycache__/tasks.cpython-310.pyc",
-    "entity/__pycache__",
-    "entity/topics.py",
-    "entity/tokens.py",
-    "entity/validators.py",
     "Pasted image 20260130130511.png",
     "Untitled.canvas",
     "proj.md",

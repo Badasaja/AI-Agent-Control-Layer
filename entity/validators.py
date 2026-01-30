@@ -80,7 +80,7 @@ class TokenValidator:
         # 2. 필드별 순회 검증
         for field_name, rule in spec.fields.items():
             
-            # 2-1. 필수 필드 존재 여부
+            # 2.1. 필수 필드 존재 여부
             if field_name not in token:
                 if rule.required:
                     self._fail(f"Missing Required Field: '{field_name}'")
@@ -88,12 +88,12 @@ class TokenValidator:
 
             value = token[field_name]
 
-            # 2-2. 타입 검증 & 제약조건 체크
+            # 2.2. 타입 검증 & 제약조건 체크
             self._check_constraint(field_name, value, rule)
 
         return True
 
-    # 99. 출력 Util
+    # (2.2. 타입 검증 & 제약조건 체크)를 위한 검증함수
     def _check_constraint(self, fname: str, val: Any, rule: FieldConstraint):
         # Type Checking & Constraints
         if rule.type == FieldType.STRING:
@@ -147,7 +147,7 @@ class SpecChainValidator:
 
         # 1.1. Spec ID 일치여부 검사
         if src_id == tgt_id:
-            self.logger.info(f"[LINK] ID 일치 {src_id} -> {tgt_id}")
+            self.logger.info(f"[LINK] TOKEN SPEC 일치 {source_task.task_id} -> {target_task.task_id}")
             return True
 
         # 1.2. 스펙 정의 존재 여부 조회 (1.1.에서 걸리지 않은 경우)

@@ -12,3 +12,61 @@
 2026-01-30 12:58:47 - ChainValidator - ERROR - [2448376257.py:39] - [LINK] 정의되지 않은 Spec ID 발견: spec_id='RS_RISK_TOKEN_V2' associated_topic='Financial_Risk related token with enhanced traceability' fields={'original_query': FieldConstraint(type=<FieldType.STRING: 'string'>, required=True, min_value=None, max_value=None, max_length=None, description=None), 'text': FieldConstraint(type=<FieldType.STRING: 'string'>, required=True, min_value=None, max_value=None, max_length=100, description=None), 'risk_score': FieldConstraint(type=<FieldType.FLOAT: 'float'>, required=True, min_value=0.0, max_value=1.0, max_length=None, description=None), 'timestamp': FieldConstraint(type=<FieldType.STRING: 'string'>, required=False, min_value=None, max_value=None, max_length=None, description=None), 'metadata': FieldConstraint(type=<FieldType.JSON: 'json'>, required=True, min_value=None, max_value=None, max_length=None, description=None)} or None
 2026-01-30 13:03:49 - ChainValidator - INFO - [2448376257.py:43] - [LINK] ID 불일치 RS_RISK_TOKEN_V2 -> RS_RISK_TOKEN_V1
 2026-01-30 13:03:49 - ChainValidator - INFO - [2448376257.py:64] - [SCHEMA] 구조적 호환성 확인 완료
+2026-01-30 15:04:10 - core.logging_utils - INFO - [logging_utils.py:89] - Logging initialized - logs directory: c:\Users\kakao\Desktop\AI_Agent\Semantic Layer\logs
+2026-01-30 15:04:10 - core.logging_utils - INFO - [logging_utils.py:90] - Log rotation configured: max 10.0MB per file, keeping 5 backups
+2026-01-30 15:04:14 - ChainValidator - INFO - [validators.py:162] - [LINK] ID 불일치 RS_RISK_TOKEN_V2 -> RS_RISK_TOKEN_V1
+2026-01-30 15:04:14 - ChainValidator - INFO - [validators.py:183] - [SCHEMA] 구조적 호환성 확인 완료
+2026-01-30 15:04:14 - Proc_ojs_test_process - INFO - [process.py:188] - [COMPILE SUCCESS] Process Topology 정상.
+2026-01-30 15:04:22 - ChainValidator - INFO - [validators.py:150] - [LINK] ID 일치 RS_RISK_TOKEN_V2 -> RS_RISK_TOKEN_V2
+2026-01-30 15:04:24 - ChainValidator - INFO - [validators.py:162] - [LINK] ID 불일치 RS_RISK_TOKEN_V2 -> RS_RISK_TOKEN_V1
+2026-01-30 15:04:24 - ChainValidator - INFO - [validators.py:183] - [SCHEMA] 구조적 호환성 확인 완료
+2026-01-30 15:04:24 - Proc_ojs_test_process - INFO - [process.py:188] - [COMPILE SUCCESS] Process Topology 정상.
+2026-01-30 15:04:30 - ChainValidator - INFO - [validators.py:150] - [LINK] ID 일치 RS_RISK_TOKEN_V2 -> RS_RISK_TOKEN_V2
+2026-01-30 15:04:30 - Proc_ojs_test_process - INFO - [process.py:188] - [COMPILE SUCCESS] Process Topology 정상.
+2026-01-30 15:17:13 - core.logging_utils - INFO - [logging_utils.py:89] - Logging initialized - logs directory: c:\Users\kakao\Desktop\AI_Agent\Semantic Layer\logs
+2026-01-30 15:17:13 - core.logging_utils - INFO - [logging_utils.py:90] - Log rotation configured: max 10.0MB per file, keeping 5 backups
+2026-01-30 15:17:18 - ChainValidator - INFO - [validators.py:150] - [LINK] ID 일치 RS_RISK_TOKEN_V2 -> RS_RISK_TOKEN_V2
+2026-01-30 15:17:18 - Proc_ojs_test_process - INFO - [process.py:188] - [COMPILE SUCCESS] Process Topology 정상.
+2026-01-30 15:28:38 - ChainValidator - INFO - [validators.py:150] - [LINK] ID 일치 RS_RISK_TOKEN_V2 -> RS_RISK_TOKEN_V2
+2026-01-30 15:30:18 - core.logging_utils - INFO - [logging_utils.py:89] - Logging initialized - logs directory: c:\Users\kakao\Desktop\AI_Agent\Semantic Layer\logs
+2026-01-30 15:30:18 - core.logging_utils - INFO - [logging_utils.py:90] - Log rotation configured: max 10.0MB per file, keeping 5 backups
+2026-01-30 15:30:22 - ChainValidator - INFO - [validators.py:150] - [LINK] ID 일치 RS_RISK_TOKEN_V2 -> RS_RISK_TOKEN_V2
+2026-01-30 15:30:25 - ChainValidator - INFO - [validators.py:150] - [LINK] ID 일치 RS_RISK_TOKEN_V2 -> RS_RISK_TOKEN_V2
+2026-01-30 15:30:25 - Proc_ojs_test_process - INFO - [process.py:189] - [COMPILE SUCCESS] Process Topology 정상.
+2026-01-30 15:50:06 - core.logging_utils - INFO - [logging_utils.py:89] - Logging initialized - logs directory: c:\Users\kakao\Desktop\AI_Agent\Semantic Layer\logs
+2026-01-30 15:50:06 - core.logging_utils - INFO - [logging_utils.py:90] - Log rotation configured: max 10.0MB per file, keeping 5 backups
+2026-01-30 15:50:20 - core.logging_utils - INFO - [logging_utils.py:89] - Logging initialized - logs directory: c:\Users\kakao\Desktop\AI_Agent\Semantic Layer\logs
+2026-01-30 15:50:20 - core.logging_utils - INFO - [logging_utils.py:90] - Log rotation configured: max 10.0MB per file, keeping 5 backups
+2026-01-30 15:55:36 - ChainValidator - INFO - [validators.py:150] - [LINK] ID 일치 RS_RISK_TOKEN_V2 -> RS_RISK_TOKEN_V2
+2026-01-30 15:57:26 - core.logging_utils - INFO - [logging_utils.py:89] - Logging initialized - logs directory: c:\Users\kakao\Desktop\AI_Agent\Semantic Layer\logs
+2026-01-30 15:57:26 - core.logging_utils - INFO - [logging_utils.py:90] - Log rotation configured: max 10.0MB per file, keeping 5 backups
+2026-01-30 15:57:36 - ChainValidator - INFO - [validators.py:150] - [LINK] ID 일치 RS_RISK_TOKEN_V2 -> RS_RISK_TOKEN_V2
+2026-01-30 15:57:38 - ChainValidator - INFO - [validators.py:150] - [LINK] ID 일치 RS_RISK_TOKEN_V2 -> RS_RISK_TOKEN_V2
+2026-01-30 15:57:38 - Proc_ojs_test_process - INFO - [process.py:197] - [COMPILE SUCCESS] Process Topology 정상.
+2026-01-30 15:58:18 - ChainValidator - INFO - [validators.py:150] - [LINK] ID 일치 RS_RISK_TOKEN_V2 -> RS_RISK_TOKEN_V2
+2026-01-30 15:58:18 - ChainValidator - INFO - [validators.py:150] - [LINK] ID 일치 RS_RISK_TOKEN_V2 -> RS_RISK_TOKEN_V2
+2026-01-30 15:58:18 - Proc_RISK_MODEL_FLOW - INFO - [process.py:197] - [COMPILE SUCCESS] Process Topology 정상.
+2026-01-30 15:58:54 - ChainValidator - INFO - [validators.py:150] - [LINK] ID 일치 RS_RISK_TOKEN_V2 -> RS_RISK_TOKEN_V2
+2026-01-30 15:58:54 - ChainValidator - INFO - [validators.py:150] - [LINK] ID 일치 RS_RISK_TOKEN_V2 -> RS_RISK_TOKEN_V2
+2026-01-30 15:58:54 - ChainValidator - INFO - [validators.py:150] - [LINK] ID 일치 RS_RISK_TOKEN_V2 -> RS_RISK_TOKEN_V2
+2026-01-30 15:58:54 - ChainValidator - INFO - [validators.py:150] - [LINK] ID 일치 RS_RISK_TOKEN_V2 -> RS_RISK_TOKEN_V2
+2026-01-30 15:58:54 - ChainValidator - INFO - [validators.py:162] - [LINK] ID 불일치 RS_RISK_TOKEN_V2 -> RS_RISK_TOKEN_V1
+2026-01-30 15:58:54 - ChainValidator - INFO - [validators.py:183] - [SCHEMA] 구조적 호환성 확인 완료
+2026-01-30 15:58:54 - Proc_RISK_MODEL_FLOW - ERROR - [process.py:279] - Cycle detected at node: TASK_TEST_001
+2026-01-30 15:58:54 - Proc_RISK_MODEL_FLOW - ERROR - [process.py:188] - [TOPOLOGY ERROR] 데드락 발생! 
+2026-01-30 15:58:54 - Proc_RISK_MODEL_FLOW - CRITICAL - [process.py:192] - [COMPILE FAILURE] : 1 errors.
+2026-01-30 16:00:09 - ChainValidator - INFO - [validators.py:150] - [LINK] ID 일치 RS_RISK_TOKEN_V2 -> RS_RISK_TOKEN_V2
+2026-01-30 16:00:09 - Proc_ojs_test_process - INFO - [process.py:197] - [COMPILE SUCCESS] Process Topology 정상.
+2026-01-30 16:00:29 - ChainValidator - INFO - [validators.py:150] - [LINK] ID 일치 RS_RISK_TOKEN_V2 -> RS_RISK_TOKEN_V2
+2026-01-30 16:00:29 - ChainValidator - INFO - [validators.py:150] - [LINK] ID 일치 RS_RISK_TOKEN_V2 -> RS_RISK_TOKEN_V2
+2026-01-30 16:00:29 - ChainValidator - INFO - [validators.py:150] - [LINK] ID 일치 RS_RISK_TOKEN_V2 -> RS_RISK_TOKEN_V2
+2026-01-30 16:00:29 - Proc_RISK_MODEL_FLOW - INFO - [process.py:197] - [COMPILE SUCCESS] Process Topology 정상.
+2026-01-30 16:02:33 - core.logging_utils - INFO - [logging_utils.py:89] - Logging initialized - logs directory: c:\Users\kakao\Desktop\AI_Agent\Semantic Layer\logs
+2026-01-30 16:02:33 - core.logging_utils - INFO - [logging_utils.py:90] - Log rotation configured: max 10.0MB per file, keeping 5 backups
+2026-01-30 16:02:49 - ChainValidator - INFO - [validators.py:150] - [LINK] TOKEN SPEC 일치 TASK_TEST_001 -> TASK_TEST_002
+2026-01-30 16:02:49 - Proc_ojs_test_process - INFO - [process.py:197] - [COMPILE SUCCESS] Spec 일치 & Process Topology 정상.
+2026-01-30 16:02:56 - ChainValidator - INFO - [validators.py:150] - [LINK] TOKEN SPEC 일치 TASK_TEST_001 -> TASK_TEST_003
+2026-01-30 16:02:56 - ChainValidator - INFO - [validators.py:150] - [LINK] TOKEN SPEC 일치 TASK_TEST_002 -> TASK_TEST_003
+2026-01-30 16:02:56 - ChainValidator - INFO - [validators.py:150] - [LINK] TOKEN SPEC 일치 TASK_TEST_003 -> TASK_TEST_004
+2026-01-30 16:02:56 - Proc_RISK_MODEL_FLOW - INFO - [process.py:197] - [COMPILE SUCCESS] Spec 일치 & Process Topology 정상.
+2026-01-30 16:04:07 - Proc_RISK_MODEL_FLOW - INFO - [process.py:213] - 토큰 주입 = TASK_TEST_001
