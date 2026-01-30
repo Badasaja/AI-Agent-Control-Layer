@@ -11,10 +11,14 @@
 
 - **Goal:** 4-Layer 아키텍처(Data - Compiler - Verification - Runtime)의 명세 확립.
     
-    - **0.1. 데이터 스키마 표준화:** `TASK_SPECIFICATION_DB`, `RESOURCE_SPECS`, `TOPIC_DB`의 JSON Schema 확정.
+    - **0.1. 데이터 스키마 표준화:** `TASK_SPECIFICATION_DB`, `RESOURCE_SPECS`, `TOPIC_DB`의 JSON Schema 확정.![[Pasted image 20260130130511.png]]
+    - 
+    - ![[Pasted image 20260130095636.png]]
 		- [x] 현재 완료사항 ; Token Spec 정의 완료
-		- [ ] Task_Specification_DB
-		- [ ] 
+		- [x] Chain Validator (Transition에서 token spec 검토하는 로직 )
+		- [ ] 프로세스 엔진 필요
+		- [ ] Task_Specification_DB 형태 정의
+		- [ ] Place, Topic, Process 정의
     - **0.2. JSON-to-CPN 매핑 프로토콜 정의:** DB의 "Role/Transition"을 Petri Net의 "Transition/Arc"로 변환하는 수학적 매핑 규칙 수립.
         
     - **0.3. 에이전트 인터페이스 계약(Contract) 정의:** 에이전트가 지켜야 할 입/출력 규격 및 Context 주입 방식 표준화.
@@ -91,3 +95,15 @@
 - 세션로그는 말 그대로 세션 중 발생한 이벤트에 대한 로그
 - 동일한 정보는 토큰로그에서도 확인 가능하나, 별도 분리하여 관리함
 
+
+### 프로세스란? 
+
+Task = Transition
+Place = Buffer / State
+Chain (Process) = Workflow Net
+Petri Net
+Place(Input) -> Task A -> Place(Intermediary) -> Task
+Task는 노드가 아니라 processor이다. 
+Place는 별 거 아니다. Level을 지닌다. 
+
+예를 들어 정관을 읽으면

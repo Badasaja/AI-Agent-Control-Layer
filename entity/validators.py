@@ -3,6 +3,11 @@ from typing import Dict, Any, List, Optional, Union
 from pydantic import BaseModel, Field, field_validator, ValidationError
 from core import logging_utils
 
+"""
+validators.py
+목적 : 프로세스의 주요 Validator들을 정의함.
+"""
+
 ### ============== 커스텀 예외 정의 ============== ###
 
 class SemanticError(Exception):
@@ -35,18 +40,18 @@ class ResourceSpecModel(BaseModel):
     associated_topic: str
     fields: Dict[str, FieldConstraint]
 
-    class Config:
+    class ConfigDict:
         frozen = True
 
 ### ======== validator class 정의 ======== ###
 
 class TokenValidator:
     """
-    역할: Token(기차)이 ResourceSpec(철도 규격)을 준수하는지 검사
+    역할: Token(기차) 클래스의 Content 필드가 ResourceSpec(철도 규격)을 준수하는지 검사
     - 검증 실패 시 SemanticError raise (즉시 중단)
     - 검증 성공 시 True 반환
     """
-    
+
     def __init__(self, spec_db: Dict[str, dict], logger=None):
         # Logger 이름 고정 (가독성 확보)
         self.logger = logger or logging_utils.get_logger("Validator")
@@ -88,6 +93,7 @@ class TokenValidator:
 
         return True
 
+    # 99. 출력 Util
     def _check_constraint(self, fname: str, val: Any, rule: FieldConstraint):
         # Type Checking & Constraints
         if rule.type == FieldType.STRING:
@@ -108,3 +114,76 @@ class TokenValidator:
         """에러 로그 출력 후 예외 발생 (중복 코드 제거용)"""
         self.logger.error(message)
         raise SemanticError(message)
+    
+### ============== Task Validator 정의 ============== ###
+
+# ==========================================
+# SpecChainValidator - Task 사이의 연결 유효 판단
+# ==========================================
+
+from typing import Any
+
+### ============== 커스텀 예외 정의 ============== ###
+class ChainSemanticError(Exception):
+    """LLM이 개입해 체인 의미론적 검증 실패 시 발생하는 예외"""
+    pass
+
+## ChainValidator
+
+class SpecChainValidator:
+    """
+    역할 : 정적분석기 (Task A의 Output Spec이 Task B의 Input Spec을 충족하는지)
+    """
+    def __init__(self, token_validator: "TokenValidator", logger=None):
+        # 기존 validator를 주입받음
+        self.token_validator = token_validator
+        self.logger = logger or logging_utils.get_logger("ChainValidator")
+
+    # 1. 검사 프로세스
+    def validate_link(self, source_task: Any, target_task : Any) -> bool:
+        # Task 연결 호환성 검사
+        src_id = source_task.output_spec_id
+        tgt_id = target_task.input_spec_id
+
+        # 1.1. Spec ID 일치여부 검사
+        if src_id == tgt_id:
+            self.logger.info(f"[LINK] ID 일치 {src_id} -> {tgt_id}")
+            return True
+
+        # 1.2. 스펙 정의 존재 여부 조회 (1.1.에서 걸리지 않은 경우)
+        out_spec = self.token_validator.specs.get(src_id)
+        in_spec = self.token_validator.specs.get(tgt_id)
+
+        if not out_spec or not in_spec:
+            self.logger.error(f"[LINK] 정의되지 않은 Spec ID 발견: {out_spec} or {in_spec}")
+            return False
+        
+        # 1.3. 구조적 호환성 검사 (ID 불일치 시)
+        self.logger.info(f"[LINK] ID 불일치 {src_id} -> {tgt_id}")
+        return self._check_schema_compatibility(out_spec, in_spec)
+
+    # (1.3. 구조적 호환성 검사) 참조 함수
+    def _check_schema_compatibility(self, producer:ResourceSpecModel, consumer: ResourceSpecModel):
+        """
+        입력부의 토큰 스키마가 수용부의 토큰 스키마를 만족하는지 여부를 검토
+        """
+        for field_name, rule in consumer.fields.items():
+            # 1. 필수 필드 제공 여부 확인
+            if rule.required and field_name not in producer.fields:
+                self.logger.error(f"[SCHEMA] 필수 필드 누락:{field_name} (수용부 요구사항)")
+            
+            # 2. 타입 호환성 확인 (필드가 존재하는 경우)
+            if field_name in producer.fields:
+                prod_rule = producer.fields[field_name]
+
+                # type check
+                if prod_rule.type != rule.type:
+                    self.logger.error(f"[SCEHMA] 타입 충돌 {field_name}: {prod_rule.type} != {rule.type}")
+                    return False
+        self.logger.info("[SCHEMA] 구조적 호환성 확인 완료")
+        return True
+
+    def _fail(self, message: str):
+        """에러 로그 출력 후 예외 발생 (중복 코드 제거용)"""
+        self.logger.error(message)
+        raise ChainSemanticError(message)

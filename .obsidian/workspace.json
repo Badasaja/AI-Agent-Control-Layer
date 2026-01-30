@@ -78,7 +78,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200
+    "width": 200,
+    "collapsed": true
   },
   "right": {
     "id": "19ecbef714392cd3",
@@ -165,11 +166,12 @@
               "title": "Outline of proj"
             }
           }
-        ]
+        ],
+        "currentTab": 4
       }
     ],
     "direction": "horizontal",
-    "width": 300,
+    "width": 228.5,
     "collapsed": true
   },
   "left-ribbon": {
@@ -185,19 +187,23 @@
   },
   "active": "7e4deb4aa3f38883",
   "lastOpenFiles": [
-    "specs/tokens.py",
-    "specs/tasks copy.py",
-    "specs/validators.py",
-    "notebooks/architecture/task_validator.ipynb",
-    "specs/tasks.py",
-    "specs/tokens copy.py",
-    "specs/__pycache__/validator.cpython-310.pyc",
-    "specs/validator.py",
-    "specs/__pycache__",
-    "specs",
-    "notebooks/architecture/task.ipynb",
-    "logs/Log Depth 설계.md",
+    "engines/execution.py",
+    "engines/engine.py",
+    "engines",
+    "entity/__pycache__/validator.cpython-310.pyc",
+    "entity/__pycache__/tokens.cpython-310.pyc",
+    "entity/__pycache__/validators.cpython-310.pyc",
+    "entity/__pycache__/tasks.cpython-310.pyc",
+    "entity/__pycache__",
+    "entity/topics.py",
+    "entity/tokens.py",
+    "entity/validators.py",
+    "Pasted image 20260130130511.png",
+    "Untitled.canvas",
     "proj.md",
+    "Pasted image 20260130095712.png",
+    "Pasted image 20260130095636.png",
+    "logs/Log Depth 설계.md",
     "image.png",
     "MD/프로젝트 마스터.md",
     "MD/S1_데이터 스키마 표준화 및 유효성/데이터 스키마 표준화.md",
