@@ -85,7 +85,7 @@ class TaskSpec(BaseModel):
     # ---- 실행로직 ---- 
     type: TaskType
     target: str # module.path:func or API URL
-    config: Dict[str, Any] = Field(default_factory=Dict)
+    config: Dict[str, Any] = Field(default_factory=Dict) # target func에게 전달됨
 
     # ---- TB-CSPN Architecture Constraints ---- 
     layer : Layer
