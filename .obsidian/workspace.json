@@ -187,10 +187,10 @@
   },
   "active": "7e4deb4aa3f38883",
   "lastOpenFiles": [
+    "db/tb_cspn.db-journal",
     "notebooks/PROC_1/proc2_KB화.ipynb",
     "notebooks/PROC_1/proc_2_KB화.ipynb",
     "notebooks/PROC_1/proc1_load_file_and_store copy.ipynb",
-    "db/tb_cspn.db-journal",
     "db/tb_cspn.db",
     "data/tb_cspn.db",
     "core/__pycache__/tokenDB.cpython-310.pyc",

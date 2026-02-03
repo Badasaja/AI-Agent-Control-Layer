@@ -1,68 +1,78 @@
 import sqlite3
-import json
+import json, os, re
 from datetime import datetime
 from typing import Optional, List
 from pydantic import ValidationError
 from entity.tokens import Token
 
 class TokenRepository:
-    def __init__(self, db_path: str = "tb_cspn.db"):
+    def __init__(self, db_path: str = "./data/tb_cspn.db", table_name: str = "tokens"):
         self.db_path = db_path
+        self.table_name = self._validate_table_name(table_name) # SQL Injection 방지
+        self._ensure_directory()
         self._init_schema()
 
+    def _ensure_directory(self):
+        """DB 파일 경로의 디렉토리가 없으면 생성"""
+        directory = os.path.dirname(self.db_path)
+        if directory:
+            os.makedirs(directory, exist_ok=True)
+
+    def _validate_table_name(self, name: str) -> str:
+        """테이블명 유효성 검사 (알파벳, 숫자, 언더스코어만 허용)"""
+        if not re.match(r"^[a-zA-Z0-9_]+$", name):
+            raise ValueError(f"Invalid table name: {name}")
+        return name
+
     def _init_schema(self):
-        """Token 클래스 필드와 1:1 매핑되는 테이블 생성"""
-        ddl = """
-        CREATE TABLE IF NOT EXISTS tokens (
+        """동적 테이블명을 사용하여 스키마 초기화"""
+        # f-string을 사용하여 테이블명 주입
+        ddl = f"""
+        CREATE TABLE IF NOT EXISTS {self.table_name} (
             trace_id TEXT PRIMARY KEY,
             source_id TEXT NOT NULL,
-            history TEXT NOT NULL,      -- List[str] -> JSON Array
-            created_at TEXT NOT NULL,   -- datetime -> ISO Format String
-            content TEXT NOT NULL,      -- Dict[str, Any] -> JSON Object
-            topics TEXT NOT NULL        -- Dict[str, float] -> JSON Object
+            history TEXT NOT NULL,      -- JSON Array
+            created_at TEXT NOT NULL,   -- ISO Format
+            content TEXT NOT NULL,      -- JSON Object
+            topics TEXT NOT NULL        -- JSON Object
         );
-        -- Lineage 추적 및 그룹핑을 위한 인덱스
-        CREATE INDEX IF NOT EXISTS idx_source_id ON tokens(source_id);
+        CREATE INDEX IF NOT EXISTS idx_{self.table_name}_source ON {self.table_name}(source_id);
         """
         with sqlite3.connect(self.db_path) as conn:
             conn.executescript(ddl)
 
     def save(self, token: 'Token'):
-        """Token 객체를 직렬화하여 DB에 저장 (Insert or Update)"""
-        query = """
-        INSERT OR REPLACE INTO tokens 
+        """지정된 테이블에 토큰 저장"""
+        query = f"""
+        INSERT OR REPLACE INTO {self.table_name} 
         (trace_id, source_id, history, created_at, content, topics)
         VALUES (?, ?, ?, ?, ?, ?)
         """
         
-        # Pydantic v2의 model_dump 모드 활용 가능하나, 명시적 변환이 안전함
         params = (
             token.trace_id,
             token.source_id,
             json.dumps(token.history),
             token.created_at.isoformat(),
-            json.dumps(token.content, ensure_ascii=False), # 한글 보존
+            json.dumps(token.content, ensure_ascii=False),
             json.dumps(token.topics)
         )
 
         with sqlite3.connect(self.db_path) as conn:
             conn.execute(query, params)
-            # conn.commit()은 context manager가 자동 처리하지만 명시 가능
 
     def load(self, trace_id: str) -> Optional['Token']:
-        """DB 레코드를 역직렬화하여 Immutable Token 객체로 복원"""
-        query = "SELECT * FROM tokens WHERE trace_id = ?"
+        """지정된 테이블에서 토큰 조회"""
+        query = f"SELECT * FROM {self.table_name} WHERE trace_id = ?"
         
         with sqlite3.connect(self.db_path) as conn:
-            conn.row_factory = sqlite3.Row # 컬럼명으로 접근 가능하게 설정
+            conn.row_factory = sqlite3.Row
             cursor = conn.execute(query, (trace_id,))
             row = cursor.fetchone()
 
-            if not row:
-                return None
+            if not row: return None
 
             try:
-                # DB Row -> Dictionary -> Pydantic Model
                 token_data = {
                     "trace_id": row["trace_id"],
                     "source_id": row["source_id"],
@@ -71,20 +81,20 @@ class TokenRepository:
                     "content": json.loads(row["content"]),
                     "topics": json.loads(row["topics"])
                 }
-                return Token(**token_data)
+                return Token(**token_data) # Token 클래스는 외부에서 import 가정
                 
             except (json.JSONDecodeError, ValidationError) as e:
-                print(f"[Error] 토큰 복원 실패 (Corrupted Data): {e}")
+                print(f"[Error] Data Corruption in {self.table_name}: {e}")
                 return None
 
     def get_by_source(self, source_id: str) -> List['Token']:
-        """특정 원천 소스에서 파생된 모든 토큰 조회"""
-        query = "SELECT trace_id FROM tokens WHERE source_id = ?"
+        """특정 소스의 토큰 일괄 조회"""
+        query = f"SELECT trace_id FROM {self.table_name} WHERE source_id = ?"
         tokens = []
         with sqlite3.connect(self.db_path) as conn:
             cursor = conn.execute(query, (source_id,))
             rows = cursor.fetchall()
             for row in rows:
-                t = self.load(row[0]) # 재사용성을 위해 load 호출
+                t = self.load(row[0])
                 if t: tokens.append(t)
         return tokens
