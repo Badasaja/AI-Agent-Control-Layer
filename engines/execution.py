@@ -5,6 +5,7 @@ from typing import Any, Optional, Dict, List
 from datetime import datetime
 from core import logging_utils
 from entity.process import Process
+from pydantic import RunnableConfig
 
 # [Dependency] FiringResult
 @dataclass
@@ -23,7 +24,7 @@ class TokenIntegrityError(Exception):
 class ExecEngine:
     """
     핵심 프로세스 실행 엔진
-    CSPN의 Transition(Task)을 실행하고, 토큰을 변환/생성하는 역할 수행
+    CSPN의 Transition(Task)을 실행하고, 토큰을 변환/생성하는 역할 수행 
     
     내부 절차 : 가드 체크 -> 입력 확인 -> 함수 실행 -> 아웃풋 확인 -> 토큰 갱신 -> 라우팅
     """
@@ -73,7 +74,23 @@ class ExecEngine:
             func = self._resolve_function(task.target)
             
             # 실행 : Token Content + task config 주입
-            output_content = func(token.content, **task.config)
+            # agents.py와 연결
+            if task.type == "llm_func": # LLM 호출의 경우, 토큰 전체를 넘겨줄 수도 있음
+                # Langraph 호환성을 위한 config -> RunnableConfig 변환
+                runnable_config = RunnableConfig(
+                    configurable = task.config,
+                    tags = [task.task_id],
+                    metadata = {"trace_id": token.trace_id}
+                )
+                current_state = {
+                    "current_token": token, 
+                    "config" : task.config, # 추가 정보. Runnable은 Langraph 호환성, 여기서는 관찰성 위함
+                    "agent_role" : task.required_agent_roles,
+                    "agent_nature" : task.required_agent_types
+                }
+                output_content = func(current_state, runnable_config=runnable_config)
+            else:
+                output_content = func(token.content, **task.config)
 
         except Exception as e:
             self.logger.error(f"Task {task.task_id} Execution Logic Failed: {e}", exc_info=True)

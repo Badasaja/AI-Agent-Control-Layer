@@ -61,9 +61,12 @@ class TokenRepository:
         with sqlite3.connect(self.db_path) as conn:
             conn.execute(query, params)
 
-    def load(self, trace_id: str) -> Optional['Token']:
+    def load(self, trace_id: str, table_name_load:str = None) -> Optional['Token']:
         """지정된 테이블에서 토큰 조회"""
-        query = f"SELECT * FROM {self.table_name} WHERE trace_id = ?"
+        
+        target_table = table_name_load if table_name_load else self.table_name
+
+        query = f"SELECT * FROM {target_table} WHERE trace_id = ?"
         
         with sqlite3.connect(self.db_path) as conn:
             conn.row_factory = sqlite3.Row

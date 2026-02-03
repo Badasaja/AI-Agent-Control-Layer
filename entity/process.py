@@ -7,7 +7,6 @@ import logging
 from core import logging_utils
 from dataclasses import dataclass
 
-
 """
 process.py
 목적 : task과 process 클래스(petrinet의 transition에 대응) 정의함.
@@ -49,6 +48,7 @@ class Layer(str, Enum):
 
 class TaskType(str, Enum):
     PYTHON_FUNC = "python_func" # LLM Invoke도 Python Func의 일종이다
+    LLM_CALL = "llm_func"
     API_CALL = "api_call"
     DOCKER_RUN = "docker_run" # 기타등등. 
 
