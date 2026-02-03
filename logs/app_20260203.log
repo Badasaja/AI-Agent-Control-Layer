@@ -1,0 +1,255 @@
+2026-02-03 09:01:20 - core.logging_utils - INFO - [logging_utils.py:89] - Logging initialized - logs directory: c:\Users\kakao\Desktop\AI_Agent\Semantic Layer\logs
+2026-02-03 09:01:20 - core.logging_utils - INFO - [logging_utils.py:90] - Log rotation configured: max 10.0MB per file, keeping 5 backups
+2026-02-03 09:07:32 - core.logging_utils - INFO - [logging_utils.py:89] - Logging initialized - logs directory: c:\Users\kakao\Desktop\AI_Agent\Semantic Layer\logs
+2026-02-03 09:07:32 - core.logging_utils - INFO - [logging_utils.py:90] - Log rotation configured: max 10.0MB per file, keeping 5 backups
+2026-02-03 09:07:39 - ChainValidator - INFO - [validators.py:150] - [LINK] TOKEN SPEC 일치 TASK_TEST_001 -> TASK_TEST_002
+2026-02-03 09:07:39 - Proc_ojs_test_process - INFO - [process.py:197] - [COMPILE SUCCESS] Spec 일치 & Process Topology 정상.
+2026-02-03 09:07:49 - ChainValidator - INFO - [validators.py:150] - [LINK] TOKEN SPEC 일치 TASK_TEST_001 -> TASK_TEST_003
+2026-02-03 09:07:49 - ChainValidator - INFO - [validators.py:150] - [LINK] TOKEN SPEC 일치 TASK_TEST_002 -> TASK_TEST_003
+2026-02-03 09:07:49 - ChainValidator - INFO - [validators.py:150] - [LINK] TOKEN SPEC 일치 TASK_TEST_003 -> TASK_TEST_004
+2026-02-03 09:07:49 - Proc_RISK_MODEL_FLOW - INFO - [process.py:197] - [COMPILE SUCCESS] Spec 일치 & Process Topology 정상.
+2026-02-03 09:07:56 - Proc_RISK_MODEL_FLOW - INFO - [process.py:213] - 토큰 주입 = TASK_TEST_001
+2026-02-03 09:13:24 - Engine - WARNING - [2404459564.py:28] - [RUN] 처리할 토큰이 큐에 없습니다.
+2026-02-03 09:13:29 - Engine - WARNING - [2404459564.py:28] - [RUN] 처리할 토큰이 큐에 없습니다.
+2026-02-03 09:14:05 - ChainValidator - INFO - [validators.py:150] - [LINK] TOKEN SPEC 일치 TASK_TEST_001 -> TASK_TEST_002
+2026-02-03 09:14:05 - Proc_ojs_test_process - INFO - [process.py:197] - [COMPILE SUCCESS] Spec 일치 & Process Topology 정상.
+2026-02-03 09:14:10 - ChainValidator - INFO - [validators.py:150] - [LINK] TOKEN SPEC 일치 TASK_TEST_001 -> TASK_TEST_003
+2026-02-03 09:14:10 - ChainValidator - INFO - [validators.py:150] - [LINK] TOKEN SPEC 일치 TASK_TEST_002 -> TASK_TEST_003
+2026-02-03 09:14:10 - ChainValidator - INFO - [validators.py:150] - [LINK] TOKEN SPEC 일치 TASK_TEST_003 -> TASK_TEST_004
+2026-02-03 09:14:10 - Proc_RISK_MODEL_FLOW - INFO - [process.py:197] - [COMPILE SUCCESS] Spec 일치 & Process Topology 정상.
+2026-02-03 09:14:11 - Proc_RISK_MODEL_FLOW - INFO - [process.py:213] - 토큰 주입 = TASK_TEST_001
+2026-02-03 09:22:52 - ChainValidator - INFO - [validators.py:150] - [LINK] TOKEN SPEC 일치 TASK_TEST_001 -> TASK_TEST_002
+2026-02-03 09:22:52 - Proc_ojs_test_process - INFO - [process.py:197] - [COMPILE SUCCESS] Spec 일치 & Process Topology 정상.
+2026-02-03 09:22:56 - ChainValidator - INFO - [validators.py:150] - [LINK] TOKEN SPEC 일치 TASK_TEST_001 -> TASK_TEST_003
+2026-02-03 09:22:56 - ChainValidator - INFO - [validators.py:150] - [LINK] TOKEN SPEC 일치 TASK_TEST_002 -> TASK_TEST_003
+2026-02-03 09:22:56 - ChainValidator - INFO - [validators.py:150] - [LINK] TOKEN SPEC 일치 TASK_TEST_003 -> TASK_TEST_004
+2026-02-03 09:22:56 - Proc_RISK_MODEL_FLOW - INFO - [process.py:197] - [COMPILE SUCCESS] Spec 일치 & Process Topology 정상.
+2026-02-03 09:22:57 - Proc_RISK_MODEL_FLOW - INFO - [process.py:213] - 토큰 주입 = TASK_TEST_001
+2026-02-03 09:23:02 - Engine - WARNING - [2404459564.py:28] - [RUN] 처리할 토큰이 큐에 없습니다.
+2026-02-03 09:23:06 - Proc_RISK_MODEL_FLOW - INFO - [process.py:213] - 토큰 주입 = TASK_TEST_001
+2026-02-03 09:24:37 - core.logging_utils - INFO - [logging_utils.py:89] - Logging initialized - logs directory: c:\Users\kakao\Desktop\AI_Agent\Semantic Layer\logs
+2026-02-03 09:24:37 - core.logging_utils - INFO - [logging_utils.py:90] - Log rotation configured: max 10.0MB per file, keeping 5 backups
+2026-02-03 09:25:43 - core.logging_utils - INFO - [logging_utils.py:89] - Logging initialized - logs directory: c:\Users\kakao\Desktop\AI_Agent\Semantic Layer\logs
+2026-02-03 09:25:43 - core.logging_utils - INFO - [logging_utils.py:90] - Log rotation configured: max 10.0MB per file, keeping 5 backups
+2026-02-03 09:26:08 - core.logging_utils - INFO - [logging_utils.py:89] - Logging initialized - logs directory: c:\Users\kakao\Desktop\AI_Agent\Semantic Layer\logs
+2026-02-03 09:26:08 - core.logging_utils - INFO - [logging_utils.py:90] - Log rotation configured: max 10.0MB per file, keeping 5 backups
+2026-02-03 09:26:17 - ChainValidator - INFO - [validators.py:150] - [LINK] TOKEN SPEC 일치 TASK_TEST_001 -> TASK_TEST_002
+2026-02-03 09:26:17 - Proc_ojs_test_process - INFO - [process.py:197] - [COMPILE SUCCESS] Spec 일치 & Process Topology 정상.
+2026-02-03 09:26:17 - ChainValidator - INFO - [validators.py:150] - [LINK] TOKEN SPEC 일치 TASK_TEST_001 -> TASK_TEST_003
+2026-02-03 09:26:17 - ChainValidator - INFO - [validators.py:150] - [LINK] TOKEN SPEC 일치 TASK_TEST_002 -> TASK_TEST_003
+2026-02-03 09:26:17 - ChainValidator - INFO - [validators.py:150] - [LINK] TOKEN SPEC 일치 TASK_TEST_003 -> TASK_TEST_004
+2026-02-03 09:26:17 - Proc_RISK_MODEL_FLOW - INFO - [process.py:197] - [COMPILE SUCCESS] Spec 일치 & Process Topology 정상.
+2026-02-03 09:26:17 - Proc_RISK_MODEL_FLOW - INFO - [process.py:213] - 토큰 주입 = TASK_TEST_001
+2026-02-03 09:26:44 - Validator - INFO - [validators.py:78] - 토큰 검증 시작 (Spec: RS_RISK_TOKEN_V1)
+2026-02-03 09:26:44 - Validator - ERROR - [validators.py:115] - Missing Required Field: 'recent_risk'
+2026-02-03 09:26:44 - Engine - WARNING - [4253578987.py:51] - Task TASK_TEST_001 Input Validation Failed: Missing Required Field: 'recent_risk'
+2026-02-03 09:34:20 - Engine - WARNING - [4161438583.py:39] - [RUN] 처리할 토큰이 큐에 없습니다.
+2026-02-03 09:34:29 - ChainValidator - INFO - [validators.py:150] - [LINK] TOKEN SPEC 일치 TASK_TEST_001 -> TASK_TEST_002
+2026-02-03 09:34:29 - Proc_ojs_test_process - INFO - [process.py:197] - [COMPILE SUCCESS] Spec 일치 & Process Topology 정상.
+2026-02-03 09:34:29 - ChainValidator - INFO - [validators.py:150] - [LINK] TOKEN SPEC 일치 TASK_TEST_001 -> TASK_TEST_003
+2026-02-03 09:34:29 - ChainValidator - INFO - [validators.py:150] - [LINK] TOKEN SPEC 일치 TASK_TEST_002 -> TASK_TEST_003
+2026-02-03 09:34:29 - ChainValidator - INFO - [validators.py:150] - [LINK] TOKEN SPEC 일치 TASK_TEST_003 -> TASK_TEST_004
+2026-02-03 09:34:29 - Proc_RISK_MODEL_FLOW - INFO - [process.py:197] - [COMPILE SUCCESS] Spec 일치 & Process Topology 정상.
+2026-02-03 09:34:29 - Proc_RISK_MODEL_FLOW - INFO - [process.py:213] - 토큰 주입 = TASK_TEST_001
+2026-02-03 09:34:32 - Validator - INFO - [validators.py:78] - 토큰 검증 시작 (Spec: RS_RISK_TOKEN_V1)
+2026-02-03 09:34:32 - Validator - ERROR - [validators.py:115] - Missing Required Field: 'recent_risk'
+2026-02-03 09:34:32 - Engine - WARNING - [4161438583.py:64] - Task TASK_TEST_001 Input Validation Failed: Missing Required Field: 'recent_risk'
+2026-02-03 09:35:23 - Engine - WARNING - [2846012119.py:39] - [RUN] 처리할 토큰이 큐에 없습니다.
+2026-02-03 09:35:33 - Proc_RISK_MODEL_FLOW - INFO - [process.py:213] - 토큰 주입 = TASK_TEST_001
+2026-02-03 09:35:33 - Engine - INFO - [2846012119.py:179] - [Layer 1 Pass] Token dfhou3898dfalss28fhs is intact.
+2026-02-03 09:35:33 - Validator - INFO - [validators.py:78] - 토큰 검증 시작 (Spec: RS_RISK_TOKEN_V1)
+2026-02-03 09:35:33 - Validator - ERROR - [validators.py:115] - Missing Required Field: 'recent_risk'
+2026-02-03 09:35:33 - Engine - WARNING - [2846012119.py:64] - Task TASK_TEST_001 Input Validation Failed: Missing Required Field: 'recent_risk'
+2026-02-03 09:35:51 - Proc_RISK_MODEL_FLOW - INFO - [process.py:213] - 토큰 주입 = TASK_TEST_001
+2026-02-03 09:35:51 - Engine - INFO - [2846012119.py:179] - [Layer 1 Pass] Token dfhou3898dfalss28fhs is intact.
+2026-02-03 09:35:51 - Validator - INFO - [validators.py:78] - 토큰 검증 시작 (Spec: RS_RISK_TOKEN_V1)
+2026-02-03 09:35:51 - Validator - ERROR - [validators.py:115] - Missing Required Field: 'recent_risk'
+2026-02-03 09:35:51 - Engine - WARNING - [2846012119.py:64] - Task TASK_TEST_001 Input Validation Failed: Missing Required Field: 'recent_risk'
+2026-02-03 09:37:58 - Proc_RISK_MODEL_FLOW - INFO - [process.py:213] - 토큰 주입 = TASK_TEST_001
+2026-02-03 09:37:58 - Engine - INFO - [1597196177.py:179] - [INFO] Token dfhou3898dfalss28fhs envelope is intact.
+2026-02-03 09:37:58 - Validator - INFO - [validators.py:78] - 토큰 검증 시작 (Spec: RS_RISK_TOKEN_V1)
+2026-02-03 09:37:58 - Validator - ERROR - [validators.py:115] - Missing Required Field: 'recent_risk'
+2026-02-03 09:37:58 - Engine - WARNING - [1597196177.py:64] - Task TASK_TEST_001 Input Validation Failed: Missing Required Field: 'recent_risk'
+2026-02-03 09:38:49 - Proc_RISK_MODEL_FLOW - INFO - [process.py:213] - 토큰 주입 = TASK_TEST_001
+2026-02-03 09:38:49 - Engine - INFO - [1597196177.py:179] - [INFO] Token dfhou3898dfalss28fhs envelope is intact.
+2026-02-03 09:38:49 - Validator - INFO - [validators.py:78] - 토큰 검증 시작 (Spec: RS_RISK_TOKEN_V1)
+2026-02-03 09:38:49 - Engine - ERROR - [1597196177.py:76] - Task TASK_TEST_001 Execution Logic Failed: Function resolution failed for 'utils.analysis:calculate_sentiment': No module named 'utils'
+Traceback (most recent call last):
+  File "C:\Users\kakao\AppData\Local\Temp\ipykernel_22312\1597196177.py", line 115, in _resolve_function
+    module = importlib.import_module(module_path)
+  File "c:\Users\kakao\miniforge3\envs\agent_env\lib\importlib\__init__.py", line 126, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1050, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1027, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 992, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "<frozen importlib._bootstrap>", line 1050, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1027, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1004, in _find_and_load_unlocked
+ModuleNotFoundError: No module named 'utils'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\kakao\AppData\Local\Temp\ipykernel_22312\1597196177.py", line 70, in run_step
+    func = self._resolve_function(task.target)
+  File "C:\Users\kakao\AppData\Local\Temp\ipykernel_22312\1597196177.py", line 118, in _resolve_function
+    raise ImportError(f"Function resolution failed for '{target_path}': {e}")
+ImportError: Function resolution failed for 'utils.analysis:calculate_sentiment': No module named 'utils'
+2026-02-03 10:08:36 - core.logging_utils - INFO - [logging_utils.py:89] - Logging initialized - logs directory: c:\Users\kakao\Desktop\AI_Agent\Semantic Layer\logs
+2026-02-03 10:08:36 - core.logging_utils - INFO - [logging_utils.py:90] - Log rotation configured: max 10.0MB per file, keeping 5 backups
+2026-02-03 10:08:49 - __main__ - INFO - [3365683506.py:49] - Initializing SQLite checkpointer at: memory\langgraph_checkpoints.db
+2026-02-03 10:08:49 - __main__ - INFO - [3365683506.py:65] - SQLite checkpointer initialized successfully
+2026-02-03 10:08:49 - __main__ - INFO - [2572214738.py:28] - Persistent memory enabled - checkpointer initialized
+2026-02-03 10:08:49 - __main__ - INFO - [4226139259.py:22] - ContentSafetyAgent initialized.
+2026-02-03 10:08:49 - __main__ - INFO - [4226139259.py:90] - RoutingAgent initialized.
+2026-02-03 10:08:49 - __main__ - INFO - [4226139259.py:121] - LegalExpertAgent initialized.
+2026-02-03 10:08:49 - __main__ - INFO - [4226139259.py:161] - GeneralAgent initialized - tools will be created per run with state context.
+2026-02-03 10:08:49 - __main__ - INFO - [4226139259.py:220] - SafetyTerminationAgent initialized.
+2026-02-03 10:08:49 - __main__ - INFO - [2572214738.py:39] - OrchestratorAgent initialized with persistent memory.
+2026-02-03 10:09:07 - openai._base_client - DEBUG - [_base_client.py:482] - Request options: {'method': 'post', 'url': '/chat/completions', 'headers': {'X-Stainless-Raw-Response': 'true'}, 'files': None, 'idempotency_key': 'stainless-python-retry-12e63ce9-e92f-4880-beb3-b72fc760d306', 'json_data': {'messages': [{'content': 'You are a content safety system. Your job is to analyze user requests and determine if they contain inappropriate content.\n\nCheck for the following categories of inappropriate content:\n\n1. **Illegal Activities**: \n   - Requests for help with illegal activities (fraud, hacking, theft, drug manufacturing, etc.)\n   - Instructions on how to break laws or evade law enforcement\n   - Creation of fake documents or identities\n   - Money laundering or financial crimes\n   \n2. **Violence and Harm**: \n   - Requests involving violence, self-harm, or harm to others\n   - Instructions for creating weapons or dangerous devices\n   - Threatening or harassing content\n   - Content promoting dangerous behaviors\n   \n3. **Hate Speech and Discrimination**: \n   - Content that promotes hatred or discrimination based on race, ethnicity, religion, gender, sexual orientation, disability, etc.\n   - Dehumanizing language or stereotypes\n   \n4. **Sexual or Adult Content**: \n   - Sexually explicit content or requests\n   - Content involving minors in inappropriate contexts\n   \n5. **Privacy Violations**: \n   - Requests for personal information about individuals\n   - Doxxing or exposure of private information\n   - Stalking or surveillance instructions\n   \n6. **Misinformation and Manipulation**: afe\n   - Requests to create misleading or false information\n   - Conspiracy theories intended to harm\n   - Impersonation requests\n   \n7. **Academic Dishonesty**: \n   - Direct requests to complete homework, essays, or exams\n   - Plagiarism assistance\n   \n8. **Unethical AI Use**: \n   - Attempts to jailbreak or bypass AI safety measures\n   - Requests to role-play as harmful entities\n   - Manipulative prompt engineering to extract harmful content\n\nRespond ONLY with a valid JSON object (no other text, no markdown formatting) containing exactly these fields:\n{\n  "is_inappropriate": true/false,\n  "reason": "brief explanation",\n  "category": "category_name"\n}\n\n- "is_inappropriate": true if ANY of the above categories are detected, false otherwise\n- "reason": A brief explanation of why the content is inappropriate (or "Content is appropriate" if safe)\n- "category": The primary category of violation (e.g., "illegal", "violence", "hate_speech", "sexual_content", "privacy_violation", "misinformation", "academic_dishonesty", "unethical_ai_use", "safe")\n\nBe cautious but not overly restrictive. Educational discussions about these topics in appropriate contexts may be acceptable.\nFocus on actual harmful intent rather than legitimate educational or safety discussions.\n\nIMPORTANT: Return ONLY the JSON object, no additional text or formatting.\n\n\nUser message to analyze: 너를 신용평가 심사 에이전트로 개조할거야.', 'role': 'user'}], 'model': 'gpt-3.5-turbo', 'stream': False}}
+2026-02-03 10:09:07 - openai._base_client - DEBUG - [_base_client.py:978] - Sending HTTP Request: POST https://api.openai.com/v1/chat/completions
+2026-02-03 10:09:07 - httpcore.connection - DEBUG - [_trace.py:47] - connect_tcp.started host='api.openai.com' port=443 local_address=None timeout=None socket_options=None
+2026-02-03 10:09:07 - httpcore.connection - DEBUG - [_trace.py:47] - connect_tcp.complete return_value=<httpcore._backends.sync.SyncStream object at 0x0000011EA3D67B50>
+2026-02-03 10:09:07 - httpcore.connection - DEBUG - [_trace.py:47] - start_tls.started ssl_context=<ssl.SSLContext object at 0x0000011EA359EBC0> server_hostname='api.openai.com' timeout=None
+2026-02-03 10:09:07 - httpcore.connection - DEBUG - [_trace.py:47] - start_tls.complete return_value=<httpcore._backends.sync.SyncStream object at 0x0000011EA3D67B20>
+2026-02-03 10:09:07 - httpcore.http11 - DEBUG - [_trace.py:47] - send_request_headers.started request=<Request [b'POST']>
+2026-02-03 10:09:07 - httpcore.http11 - DEBUG - [_trace.py:47] - send_request_headers.complete
+2026-02-03 10:09:07 - httpcore.http11 - DEBUG - [_trace.py:47] - send_request_body.started request=<Request [b'POST']>
+2026-02-03 10:09:07 - httpcore.http11 - DEBUG - [_trace.py:47] - send_request_body.complete
+2026-02-03 10:09:07 - httpcore.http11 - DEBUG - [_trace.py:47] - receive_response_headers.started request=<Request [b'POST']>
+2026-02-03 10:09:09 - httpcore.http11 - DEBUG - [_trace.py:47] - receive_response_headers.complete return_value=(b'HTTP/1.1', 200, b'OK', [(b'Date', b'Tue, 03 Feb 2026 01:09:09 GMT'), (b'Content-Type', b'application/json'), (b'Transfer-Encoding', b'chunked'), (b'Connection', b'keep-alive'), (b'access-control-expose-headers', b'X-Request-ID'), (b'openai-organization', b'user-9pcr5tnimjluxvykvtsz5xh0'), (b'openai-processing-ms', b'383'), (b'openai-project', b'proj_7gwdlEqPcpzVEpNDmdgWIgwb'), (b'openai-version', b'2020-10-01'), (b'x-ratelimit-limit-requests', b'10000'), (b'x-ratelimit-limit-tokens', b'200000'), (b'x-ratelimit-remaining-requests', b'9999'), (b'x-ratelimit-remaining-tokens', b'199320'), (b'x-ratelimit-reset-requests', b'8.64s'), (b'x-ratelimit-reset-tokens', b'204ms'), (b'x-request-id', b'req_8db713458f2a4e0ba7194f0e927df712'), (b'x-openai-proxy-wasm', b'v0.1'), (b'cf-cache-status', b'DYNAMIC'), (b'Set-Cookie', b'__cf_bm=AZOmFvrna8T0LAP2YoSf98yQZsqZgV6cLm2zCBU159k-1770080949-1.0.1.1-T2ZhvT_KPE8cwuIlYw.iD1l3m2AcX1rhPpf0ZkS7_V79lVNIqP.v.5gX_WmkITHP0VLOotTIxEOXFYNbmXK4TjPn91mausszepw.sYl4dHA; path=/; expires=Tue, 03-Feb-26 01:39:09 GMT; domain=.api.openai.com; HttpOnly; Secure; SameSite=None'), (b'Strict-Transport-Security', b'max-age=31536000; includeSubDomains; preload'), (b'X-Content-Type-Options', b'nosniff'), (b'Set-Cookie', b'_cfuvid=p385IipLr30JBQvJcy2TrtieUKwLr51NjZnk3kRMrlU-1770080949293-0.0.1.1-604800000; path=/; domain=.api.openai.com; HttpOnly; Secure; SameSite=None'), (b'Server', b'cloudflare'), (b'CF-RAY', b'9c7e0a828ee4a7de-ICN'), (b'Content-Encoding', b'gzip'), (b'alt-svc', b'h3=":443"; ma=86400')])
+2026-02-03 10:09:09 - httpx - INFO - [_client.py:1025] - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-03 10:09:09 - httpcore.http11 - DEBUG - [_trace.py:47] - receive_response_body.started request=<Request [b'POST']>
+2026-02-03 10:09:09 - httpcore.http11 - DEBUG - [_trace.py:47] - receive_response_body.complete
+2026-02-03 10:09:09 - httpcore.http11 - DEBUG - [_trace.py:47] - response_closed.started
+2026-02-03 10:09:09 - httpcore.http11 - DEBUG - [_trace.py:47] - response_closed.complete
+2026-02-03 10:09:09 - openai._base_client - DEBUG - [_base_client.py:1016] - HTTP Response: POST https://api.openai.com/v1/chat/completions "200 OK" Headers([('date', 'Tue, 03 Feb 2026 01:09:09 GMT'), ('content-type', 'application/json'), ('transfer-encoding', 'chunked'), ('connection', 'keep-alive'), ('access-control-expose-headers', 'X-Request-ID'), ('openai-organization', 'user-9pcr5tnimjluxvykvtsz5xh0'), ('openai-processing-ms', '383'), ('openai-project', 'proj_7gwdlEqPcpzVEpNDmdgWIgwb'), ('openai-version', '2020-10-01'), ('x-ratelimit-limit-requests', '10000'), ('x-ratelimit-limit-tokens', '200000'), ('x-ratelimit-remaining-requests', '9999'), ('x-ratelimit-remaining-tokens', '199320'), ('x-ratelimit-reset-requests', '8.64s'), ('x-ratelimit-reset-tokens', '204ms'), ('x-request-id', 'req_8db713458f2a4e0ba7194f0e927df712'), ('x-openai-proxy-wasm', 'v0.1'), ('cf-cache-status', 'DYNAMIC'), ('set-cookie', '__cf_bm=AZOmFvrna8T0LAP2YoSf98yQZsqZgV6cLm2zCBU159k-1770080949-1.0.1.1-T2ZhvT_KPE8cwuIlYw.iD1l3m2AcX1rhPpf0ZkS7_V79lVNIqP.v.5gX_WmkITHP0VLOotTIxEOXFYNbmXK4TjPn91mausszepw.sYl4dHA; path=/; expires=Tue, 03-Feb-26 01:39:09 GMT; domain=.api.openai.com; HttpOnly; Secure; SameSite=None'), ('strict-transport-security', 'max-age=31536000; includeSubDomains; preload'), ('x-content-type-options', 'nosniff'), ('set-cookie', '_cfuvid=p385IipLr30JBQvJcy2TrtieUKwLr51NjZnk3kRMrlU-1770080949293-0.0.1.1-604800000; path=/; domain=.api.openai.com; HttpOnly; Secure; SameSite=None'), ('server', 'cloudflare'), ('cf-ray', '9c7e0a828ee4a7de-ICN'), ('content-encoding', 'gzip'), ('alt-svc', 'h3=":443"; ma=86400')])
+2026-02-03 10:09:09 - openai._base_client - DEBUG - [_base_client.py:1024] - request_id: req_8db713458f2a4e0ba7194f0e927df712
+2026-02-03 10:09:09 - __main__ - INFO - [4226139259.py:71] - 🛡️ Content safety check passed - content is appropriate
+2026-02-03 10:09:09 - openai._base_client - DEBUG - [_base_client.py:482] - Request options: {'method': 'post', 'url': '/chat/completions', 'headers': {'X-Stainless-Raw-Response': 'true'}, 'files': None, 'idempotency_key': 'stainless-python-retry-28a4b5f5-a8d1-4bb8-9e1d-7db4d93bbb6f', 'json_data': {'messages': [{'content': 'You are a routing system that determines which agent should handle a user request.\n\nAnalyze the conversation history and the latest user request to determine the appropriate agent.\n\n**legal_expert** - If the request is about:\n- Law, legal matters, regulations\n- Rights, contracts, legal procedures\n- Court cases, legal precedents\n- Legal advice or legal systems\n- Compliance, legal documents\n\n**general_agent** - If the request is about:\n- EVERYTHING that is not law-related\n\nINSTRUCTIONS:\n- Respond with ONLY the agent name: either "legal_expert" or "general_agent"\n- No explanations, no additional text\n- No quotes, no punctuation\n- Just the agent name as a single word\n\nConversation history and current request:\nUser: 너를 신용평가 심사 에이전트로 개조할거야.\n\n\nAgent to route to:', 'role': 'user'}], 'model': 'gpt-3.5-turbo', 'parallel_tool_calls': False, 'stream': False, 'tool_choice': {'type': 'function', 'function': {'name': 'ResponseFormatter'}}, 'tools': [{'type': 'function', 'function': {'name': 'ResponseFormatter', 'description': '', 'parameters': {'properties': {'routing_decision': {'type': 'string'}}, 'required': ['routing_decision'], 'type': 'object'}}}]}}
+2026-02-03 10:09:09 - openai._base_client - DEBUG - [_base_client.py:978] - Sending HTTP Request: POST https://api.openai.com/v1/chat/completions
+2026-02-03 10:09:09 - httpcore.http11 - DEBUG - [_trace.py:47] - send_request_headers.started request=<Request [b'POST']>
+2026-02-03 10:09:09 - httpcore.http11 - DEBUG - [_trace.py:47] - send_request_headers.complete
+2026-02-03 10:09:09 - httpcore.http11 - DEBUG - [_trace.py:47] - send_request_body.started request=<Request [b'POST']>
+2026-02-03 10:09:09 - httpcore.http11 - DEBUG - [_trace.py:47] - send_request_body.complete
+2026-02-03 10:09:09 - httpcore.http11 - DEBUG - [_trace.py:47] - receive_response_headers.started request=<Request [b'POST']>
+2026-02-03 10:09:11 - httpcore.http11 - DEBUG - [_trace.py:47] - receive_response_headers.complete return_value=(b'HTTP/1.1', 200, b'OK', [(b'Date', b'Tue, 03 Feb 2026 01:09:10 GMT'), (b'Content-Type', b'application/json'), (b'Transfer-Encoding', b'chunked'), (b'Connection', b'keep-alive'), (b'access-control-expose-headers', b'X-Request-ID'), (b'openai-organization', b'user-9pcr5tnimjluxvykvtsz5xh0'), (b'openai-processing-ms', b'179'), (b'openai-project', b'proj_7gwdlEqPcpzVEpNDmdgWIgwb'), (b'openai-version', b'2020-10-01'), (b'x-ratelimit-limit-requests', b'10000'), (b'x-ratelimit-limit-tokens', b'200000'), (b'x-ratelimit-remaining-requests', b'9998'), (b'x-ratelimit-remaining-tokens', b'199797'), (b'x-ratelimit-reset-requests', b'15.423s'), (b'x-ratelimit-reset-tokens', b'60ms'), (b'x-request-id', b'req_ff490da5889f44b4b613af470f695e07'), (b'x-openai-proxy-wasm', b'v0.1'), (b'cf-cache-status', b'DYNAMIC'), (b'Strict-Transport-Security', b'max-age=31536000; includeSubDomains; preload'), (b'X-Content-Type-Options', b'nosniff'), (b'Server', b'cloudflare'), (b'CF-RAY', b'9c7e0a8e1823a7de-ICN'), (b'Content-Encoding', b'gzip'), (b'alt-svc', b'h3=":443"; ma=86400')])
+2026-02-03 10:09:11 - httpx - INFO - [_client.py:1025] - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-03 10:09:11 - httpcore.http11 - DEBUG - [_trace.py:47] - receive_response_body.started request=<Request [b'POST']>
+2026-02-03 10:09:11 - httpcore.http11 - DEBUG - [_trace.py:47] - receive_response_body.complete
+2026-02-03 10:09:11 - httpcore.http11 - DEBUG - [_trace.py:47] - response_closed.started
+2026-02-03 10:09:11 - httpcore.http11 - DEBUG - [_trace.py:47] - response_closed.complete
+2026-02-03 10:09:11 - openai._base_client - DEBUG - [_base_client.py:1016] - HTTP Response: POST https://api.openai.com/v1/chat/completions "200 OK" Headers({'date': 'Tue, 03 Feb 2026 01:09:10 GMT', 'content-type': 'application/json', 'transfer-encoding': 'chunked', 'connection': 'keep-alive', 'access-control-expose-headers': 'X-Request-ID', 'openai-organization': 'user-9pcr5tnimjluxvykvtsz5xh0', 'openai-processing-ms': '179', 'openai-project': 'proj_7gwdlEqPcpzVEpNDmdgWIgwb', 'openai-version': '2020-10-01', 'x-ratelimit-limit-requests': '10000', 'x-ratelimit-limit-tokens': '200000', 'x-ratelimit-remaining-requests': '9998', 'x-ratelimit-remaining-tokens': '199797', 'x-ratelimit-reset-requests': '15.423s', 'x-ratelimit-reset-tokens': '60ms', 'x-request-id': 'req_ff490da5889f44b4b613af470f695e07', 'x-openai-proxy-wasm': 'v0.1', 'cf-cache-status': 'DYNAMIC', 'strict-transport-security': 'max-age=31536000; includeSubDomains; preload', 'x-content-type-options': 'nosniff', 'server': 'cloudflare', 'cf-ray': '9c7e0a8e1823a7de-ICN', 'content-encoding': 'gzip', 'alt-svc': 'h3=":443"; ma=86400'})
+2026-02-03 10:09:11 - openai._base_client - DEBUG - [_base_client.py:1024] - request_id: req_ff490da5889f44b4b613af470f695e07
+2026-02-03 10:09:11 - asyncio - DEBUG - [selector_events.py:54] - Using selector: SelectSelector
+2026-02-03 10:09:11 - __main__ - WARNING - [932153280.py:143] - ACCUWEATHER_API_KEY not set in environment variables. Weather tools may not work properly.
+2026-02-03 10:09:11 - __main__ - INFO - [932153280.py:152] - Connecting to MCP weather server...
+2026-02-03 10:09:11 - __main__ - ERROR - [932153280.py:164] - Failed to load MCP weather tools: fileno
+2026-02-03 10:09:11 - __main__ - INFO - [932153280.py:304] - No MCP weather tools available
+2026-02-03 10:09:11 - openai._base_client - DEBUG - [_base_client.py:482] - Request options: {'method': 'post', 'url': '/chat/completions', 'files': None, 'idempotency_key': 'stainless-python-retry-8d5dbcbc-c869-40e6-a43e-a63b5f1f4d1d', 'json_data': {'messages': [{'content': 'You are a helpful AI assistant with access to various tools and MCP servers.\n\nYou can handle:\n- Programming and code generation\n- File operations and system commands\n- General knowledge questions (history, science, arts, culture)\n- Technical debugging and analysis\n- Calculations and data processing\n- Any task that is NOT specifically about law or legal matters\n\nBe helpful, concise, and friendly. Use your tools effectively to assist users with their requests.\n\n', 'role': 'system'}, {'content': 'Conversation history:\nUser: 너를 신용평가 심사 에이전트로 개조할거야.\n\nCurrent request: 너를 신용평가 심사 에이전트로 개조할거야.', 'role': 'user'}], 'model': 'gpt-3.5-turbo', 'stream': True, 'stream_options': {'include_usage': True}, 'tools': [{'type': 'function', 'function': {'name': 'add_numbers_bound', 'description': 'Add two numbers together and return the result.\n\n        Args:\n            a: First number to add\n            b: Second number to add\n\n        Returns:\n            String describing the result', 'parameters': {'properties': {'a': {'type': 'number'}, 'b': {'type': 'number'}}, 'required': ['a', 'b'], 'type': 'object'}}}, {'type': 'function', 'function': {'name': 'multiply_numbers_bound', 'description': 'Multiply two numbers together and return the product.\n\n        Args:\n            a: First number to multiply\n            b: Second number to multiply\n\n        Returns:\n            String describing the result', 'parameters': {'properties': {'a': {'type': 'number'}, 'b': {'type': 'number'}}, 'required': ['a', 'b'], 'type': 'object'}}}, {'type': 'function', 'function': {'name': 'generate_code_bound', 'description': 'Generate complete code implementations with tests using a multi-agent system.\n\n        This tool creates production-ready Python code with proper structure and comprehensive test coverage.\n        It iteratively improves the code until all tests pass.\n\n        Args:\n            prompt: Description of the code to generate\n\n        Returns:\n            String describing the generation result', 'parameters': {'properties': {'prompt': {'type': 'string'}}, 'required': ['prompt'], 'type': 'object'}}}]}}
+2026-02-03 10:09:11 - openai._base_client - DEBUG - [_base_client.py:978] - Sending HTTP Request: POST https://api.openai.com/v1/chat/completions
+2026-02-03 10:09:11 - httpcore.http11 - DEBUG - [_trace.py:47] - send_request_headers.started request=<Request [b'POST']>
+2026-02-03 10:09:11 - httpcore.http11 - DEBUG - [_trace.py:47] - send_request_headers.complete
+2026-02-03 10:09:11 - httpcore.http11 - DEBUG - [_trace.py:47] - send_request_body.started request=<Request [b'POST']>
+2026-02-03 10:09:11 - httpcore.http11 - DEBUG - [_trace.py:47] - send_request_body.complete
+2026-02-03 10:09:11 - httpcore.http11 - DEBUG - [_trace.py:47] - receive_response_headers.started request=<Request [b'POST']>
+2026-02-03 10:09:12 - httpcore.http11 - DEBUG - [_trace.py:47] - receive_response_headers.complete return_value=(b'HTTP/1.1', 200, b'OK', [(b'Date', b'Tue, 03 Feb 2026 01:09:12 GMT'), (b'Content-Type', b'text/event-stream; charset=utf-8'), (b'Transfer-Encoding', b'chunked'), (b'Connection', b'keep-alive'), (b'access-control-expose-headers', b'X-Request-ID'), (b'openai-organization', b'user-9pcr5tnimjluxvykvtsz5xh0'), (b'openai-processing-ms', b'179'), (b'openai-project', b'proj_7gwdlEqPcpzVEpNDmdgWIgwb'), (b'openai-version', b'2020-10-01'), (b'x-ratelimit-limit-requests', b'10000'), (b'x-ratelimit-limit-tokens', b'200000'), (b'x-ratelimit-remaining-requests', b'9997'), (b'x-ratelimit-remaining-tokens', b'199838'), (b'x-ratelimit-reset-requests', b'22.454s'), (b'x-ratelimit-reset-tokens', b'48ms'), (b'x-request-id', b'req_a8ad74f6db7d43f5904de54b758cbf0d'), (b'x-openai-proxy-wasm', b'v0.1'), (b'cf-cache-status', b'DYNAMIC'), (b'Strict-Transport-Security', b'max-age=31536000; includeSubDomains; preload'), (b'X-Content-Type-Options', b'nosniff'), (b'Server', b'cloudflare'), (b'CF-RAY', b'9c7e0a9958bfa7de-ICN'), (b'alt-svc', b'h3=":443"; ma=86400')])
+2026-02-03 10:09:12 - httpx - INFO - [_client.py:1025] - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-03 10:09:12 - openai._base_client - DEBUG - [_base_client.py:1016] - HTTP Response: POST https://api.openai.com/v1/chat/completions "200 OK" Headers({'date': 'Tue, 03 Feb 2026 01:09:12 GMT', 'content-type': 'text/event-stream; charset=utf-8', 'transfer-encoding': 'chunked', 'connection': 'keep-alive', 'access-control-expose-headers': 'X-Request-ID', 'openai-organization': 'user-9pcr5tnimjluxvykvtsz5xh0', 'openai-processing-ms': '179', 'openai-project': 'proj_7gwdlEqPcpzVEpNDmdgWIgwb', 'openai-version': '2020-10-01', 'x-ratelimit-limit-requests': '10000', 'x-ratelimit-limit-tokens': '200000', 'x-ratelimit-remaining-requests': '9997', 'x-ratelimit-remaining-tokens': '199838', 'x-ratelimit-reset-requests': '22.454s', 'x-ratelimit-reset-tokens': '48ms', 'x-request-id': 'req_a8ad74f6db7d43f5904de54b758cbf0d', 'x-openai-proxy-wasm': 'v0.1', 'cf-cache-status': 'DYNAMIC', 'strict-transport-security': 'max-age=31536000; includeSubDomains; preload', 'x-content-type-options': 'nosniff', 'server': 'cloudflare', 'cf-ray': '9c7e0a9958bfa7de-ICN', 'alt-svc': 'h3=":443"; ma=86400'})
+2026-02-03 10:09:12 - openai._base_client - DEBUG - [_base_client.py:1024] - request_id: req_a8ad74f6db7d43f5904de54b758cbf0d
+2026-02-03 10:09:12 - httpcore.http11 - DEBUG - [_trace.py:47] - receive_response_body.started request=<Request [b'POST']>
+2026-02-03 10:09:14 - httpcore.http11 - DEBUG - [_trace.py:47] - response_closed.started
+2026-02-03 10:09:14 - httpcore.http11 - DEBUG - [_trace.py:47] - response_closed.complete
+2026-02-03 10:09:14 - httpcore.http11 - DEBUG - [_trace.py:47] - receive_response_body.failed exception=GeneratorExit()
+2026-02-03 10:09:14 - __main__ - INFO - [2572214738.py:148] - 🔢 LangGraph interaction - Input: 1185, Output: 163, Total: 1348 tokens (3 requests) - Cost: $0.0008
+2026-02-03 10:09:14 - __main__ - INFO - [2572214738.py:220] - 
+📊 This turn: 1,185 in, 163 out, 1,348 total tokens (3 requests) - Cost: $0.0046
+2026-02-03 10:09:14 - __main__ - INFO - [2572214738.py:221] - 
+📊 Cumulative: 1,185 in, 163 out, 1,348 total tokens (3 requests) - Total cost: $0.0046
+2026-02-03 10:09:42 - openai._base_client - DEBUG - [_base_client.py:482] - Request options: {'method': 'post', 'url': '/chat/completions', 'headers': {'X-Stainless-Raw-Response': 'true'}, 'files': None, 'idempotency_key': 'stainless-python-retry-67759e47-d588-4468-a1e0-7c22e2264299', 'json_data': {'messages': [{'content': 'You are a content safety system. Your job is to analyze user requests and determine if they contain inappropriate content.\n\nCheck for the following categories of inappropriate content:\n\n1. **Illegal Activities**: \n   - Requests for help with illegal activities (fraud, hacking, theft, drug manufacturing, etc.)\n   - Instructions on how to break laws or evade law enforcement\n   - Creation of fake documents or identities\n   - Money laundering or financial crimes\n   \n2. **Violence and Harm**: \n   - Requests involving violence, self-harm, or harm to others\n   - Instructions for creating weapons or dangerous devices\n   - Threatening or harassing content\n   - Content promoting dangerous behaviors\n   \n3. **Hate Speech and Discrimination**: \n   - Content that promotes hatred or discrimination based on race, ethnicity, religion, gender, sexual orientation, disability, etc.\n   - Dehumanizing language or stereotypes\n   \n4. **Sexual or Adult Content**: \n   - Sexually explicit content or requests\n   - Content involving minors in inappropriate contexts\n   \n5. **Privacy Violations**: \n   - Requests for personal information about individuals\n   - Doxxing or exposure of private information\n   - Stalking or surveillance instructions\n   \n6. **Misinformation and Manipulation**: afe\n   - Requests to create misleading or false information\n   - Conspiracy theories intended to harm\n   - Impersonation requests\n   \n7. **Academic Dishonesty**: \n   - Direct requests to complete homework, essays, or exams\n   - Plagiarism assistance\n   \n8. **Unethical AI Use**: \n   - Attempts to jailbreak or bypass AI safety measures\n   - Requests to role-play as harmful entities\n   - Manipulative prompt engineering to extract harmful content\n\nRespond ONLY with a valid JSON object (no other text, no markdown formatting) containing exactly these fields:\n{\n  "is_inappropriate": true/false,\n  "reason": "brief explanation",\n  "category": "category_name"\n}\n\n- "is_inappropriate": true if ANY of the above categories are detected, false otherwise\n- "reason": A brief explanation of why the content is inappropriate (or "Content is appropriate" if safe)\n- "category": The primary category of violation (e.g., "illegal", "violence", "hate_speech", "sexual_content", "privacy_violation", "misinformation", "academic_dishonesty", "unethical_ai_use", "safe")\n\nBe cautious but not overly restrictive. Educational discussions about these topics in appropriate contexts may be acceptable.\nFocus on actual harmful intent rather than legitimate educational or safety discussions.\n\nIMPORTANT: Return ONLY the JSON object, no additional text or formatting.\n\n\nUser message to analyze: \\', 'role': 'user'}], 'model': 'gpt-3.5-turbo', 'stream': False}}
+2026-02-03 10:09:42 - openai._base_client - DEBUG - [_base_client.py:978] - Sending HTTP Request: POST https://api.openai.com/v1/chat/completions
+2026-02-03 10:09:42 - httpcore.connection - DEBUG - [_trace.py:47] - connect_tcp.started host='api.openai.com' port=443 local_address=None timeout=None socket_options=None
+2026-02-03 10:09:42 - httpcore.connection - DEBUG - [_trace.py:47] - connect_tcp.complete return_value=<httpcore._backends.sync.SyncStream object at 0x0000011EA3DB6C50>
+2026-02-03 10:09:42 - httpcore.connection - DEBUG - [_trace.py:47] - start_tls.started ssl_context=<ssl.SSLContext object at 0x0000011EA359EBC0> server_hostname='api.openai.com' timeout=None
+2026-02-03 10:09:43 - httpcore.connection - DEBUG - [_trace.py:47] - start_tls.complete return_value=<httpcore._backends.sync.SyncStream object at 0x0000011EA3DB4AF0>
+2026-02-03 10:09:43 - httpcore.http11 - DEBUG - [_trace.py:47] - send_request_headers.started request=<Request [b'POST']>
+2026-02-03 10:09:43 - httpcore.http11 - DEBUG - [_trace.py:47] - send_request_headers.complete
+2026-02-03 10:09:43 - httpcore.http11 - DEBUG - [_trace.py:47] - send_request_body.started request=<Request [b'POST']>
+2026-02-03 10:09:43 - httpcore.http11 - DEBUG - [_trace.py:47] - send_request_body.complete
+2026-02-03 10:09:43 - httpcore.http11 - DEBUG - [_trace.py:47] - receive_response_headers.started request=<Request [b'POST']>
+2026-02-03 10:09:44 - httpcore.http11 - DEBUG - [_trace.py:47] - receive_response_headers.complete return_value=(b'HTTP/1.1', 200, b'OK', [(b'Date', b'Tue, 03 Feb 2026 01:09:44 GMT'), (b'Content-Type', b'application/json'), (b'Transfer-Encoding', b'chunked'), (b'Connection', b'keep-alive'), (b'access-control-expose-headers', b'X-Request-ID'), (b'openai-organization', b'user-9pcr5tnimjluxvykvtsz5xh0'), (b'openai-processing-ms', b'434'), (b'openai-project', b'proj_7gwdlEqPcpzVEpNDmdgWIgwb'), (b'openai-version', b'2020-10-01'), (b'x-ratelimit-limit-requests', b'10000'), (b'x-ratelimit-limit-tokens', b'200000'), (b'x-ratelimit-remaining-requests', b'9999'), (b'x-ratelimit-remaining-tokens', b'199335'), (b'x-ratelimit-reset-requests', b'8.64s'), (b'x-ratelimit-reset-tokens', b'199ms'), (b'x-request-id', b'req_8ced99bba1254949b176fd1b1617090c'), (b'x-openai-proxy-wasm', b'v0.1'), (b'cf-cache-status', b'DYNAMIC'), (b'Strict-Transport-Security', b'max-age=31536000; includeSubDomains; preload'), (b'X-Content-Type-Options', b'nosniff'), (b'Server', b'cloudflare'), (b'CF-RAY', b'9c7e0b5ec8fd3274-ICN'), (b'Content-Encoding', b'gzip'), (b'alt-svc', b'h3=":443"; ma=86400')])
+2026-02-03 10:09:44 - httpx - INFO - [_client.py:1025] - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-03 10:09:44 - httpcore.http11 - DEBUG - [_trace.py:47] - receive_response_body.started request=<Request [b'POST']>
+2026-02-03 10:09:44 - httpcore.http11 - DEBUG - [_trace.py:47] - receive_response_body.complete
+2026-02-03 10:09:44 - httpcore.http11 - DEBUG - [_trace.py:47] - response_closed.started
+2026-02-03 10:09:44 - httpcore.http11 - DEBUG - [_trace.py:47] - response_closed.complete
+2026-02-03 10:09:44 - openai._base_client - DEBUG - [_base_client.py:1016] - HTTP Response: POST https://api.openai.com/v1/chat/completions "200 OK" Headers({'date': 'Tue, 03 Feb 2026 01:09:44 GMT', 'content-type': 'application/json', 'transfer-encoding': 'chunked', 'connection': 'keep-alive', 'access-control-expose-headers': 'X-Request-ID', 'openai-organization': 'user-9pcr5tnimjluxvykvtsz5xh0', 'openai-processing-ms': '434', 'openai-project': 'proj_7gwdlEqPcpzVEpNDmdgWIgwb', 'openai-version': '2020-10-01', 'x-ratelimit-limit-requests': '10000', 'x-ratelimit-limit-tokens': '200000', 'x-ratelimit-remaining-requests': '9999', 'x-ratelimit-remaining-tokens': '199335', 'x-ratelimit-reset-requests': '8.64s', 'x-ratelimit-reset-tokens': '199ms', 'x-request-id': 'req_8ced99bba1254949b176fd1b1617090c', 'x-openai-proxy-wasm': 'v0.1', 'cf-cache-status': 'DYNAMIC', 'strict-transport-security': 'max-age=31536000; includeSubDomains; preload', 'x-content-type-options': 'nosniff', 'server': 'cloudflare', 'cf-ray': '9c7e0b5ec8fd3274-ICN', 'content-encoding': 'gzip', 'alt-svc': 'h3=":443"; ma=86400'})
+2026-02-03 10:09:44 - openai._base_client - DEBUG - [_base_client.py:1024] - request_id: req_8ced99bba1254949b176fd1b1617090c
+2026-02-03 10:09:44 - __main__ - WARNING - [4226139259.py:64] - 🛡️ CONTENT SAFETY VIOLATION DETECTED - reason: 'Request for assistance with illegal activities', category: 'illegal'
+2026-02-03 10:09:44 - __main__ - WARNING - [4226139259.py:69] - 🛡️ Flagged content: '\...' (truncated)
+2026-02-03 10:09:44 - __main__ - INFO - [2572214738.py:148] - 🔢 LangGraph interaction - Input: 562, Output: 29, Total: 591 tokens (1 requests) - Cost: $0.0003
+2026-02-03 10:09:44 - __main__ - INFO - [2572214738.py:220] - 
+📊 This turn: 562 in, 29 out, 591 total tokens (1 requests) - Cost: $0.0017
+2026-02-03 10:09:44 - __main__ - INFO - [2572214738.py:221] - 
+📊 Cumulative: 1,747 in, 192 out, 1,939 total tokens (4 requests) - Total cost: $0.0063
+2026-02-03 10:10:21 - core.logging_utils - INFO - [logging_utils.py:89] - Logging initialized - logs directory: c:\Users\kakao\Desktop\AI_Agent\Semantic Layer\logs
+2026-02-03 10:10:21 - core.logging_utils - INFO - [logging_utils.py:90] - Log rotation configured: max 10.0MB per file, keeping 5 backups
+2026-02-03 10:11:04 - core.logging_utils - INFO - [logging_utils.py:89] - Logging initialized - logs directory: c:\Users\kakao\Desktop\AI_Agent\Semantic Layer\logs
+2026-02-03 10:11:04 - core.logging_utils - INFO - [logging_utils.py:90] - Log rotation configured: max 10.0MB per file, keeping 5 backups
+2026-02-03 10:11:16 - core.logging_utils - INFO - [logging_utils.py:89] - Logging initialized - logs directory: c:\Users\kakao\Desktop\AI_Agent\Semantic Layer\logs
+2026-02-03 10:11:16 - core.logging_utils - INFO - [logging_utils.py:90] - Log rotation configured: max 10.0MB per file, keeping 5 backups
+2026-02-03 10:11:18 - __main__ - INFO - [3365683506.py:49] - Initializing SQLite checkpointer at: memory\langgraph_checkpoints.db
+2026-02-03 10:11:18 - __main__ - INFO - [3365683506.py:65] - SQLite checkpointer initialized successfully
+2026-02-03 10:11:18 - __main__ - INFO - [2572214738.py:28] - Persistent memory enabled - checkpointer initialized
+2026-02-03 10:11:18 - __main__ - INFO - [4226139259.py:22] - ContentSafetyAgent initialized.
+2026-02-03 10:11:18 - __main__ - INFO - [4226139259.py:90] - RoutingAgent initialized.
+2026-02-03 10:11:18 - __main__ - INFO - [4226139259.py:121] - LegalExpertAgent initialized.
+2026-02-03 10:11:18 - __main__ - INFO - [4226139259.py:161] - GeneralAgent initialized - tools will be created per run with state context.
+2026-02-03 10:11:18 - __main__ - INFO - [4226139259.py:220] - SafetyTerminationAgent initialized.
+2026-02-03 10:11:18 - __main__ - INFO - [2572214738.py:39] - OrchestratorAgent initialized with persistent memory.
+2026-02-03 10:11:30 - httpx - INFO - [_client.py:1025] - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-03 10:11:30 - __main__ - INFO - [4226139259.py:71] - 🛡️ Content safety check passed - content is appropriate
+2026-02-03 10:11:32 - httpx - INFO - [_client.py:1025] - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-03 10:11:32 - __main__ - WARNING - [932153280.py:143] - ACCUWEATHER_API_KEY not set in environment variables. Weather tools may not work properly.
+2026-02-03 10:11:32 - __main__ - INFO - [932153280.py:152] - Connecting to MCP weather server...
+2026-02-03 10:11:32 - __main__ - ERROR - [932153280.py:164] - Failed to load MCP weather tools: fileno
+2026-02-03 10:11:32 - __main__ - INFO - [932153280.py:304] - No MCP weather tools available
+2026-02-03 10:11:34 - httpx - INFO - [_client.py:1025] - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-03 10:11:35 - __main__ - INFO - [2572214738.py:148] - 🔢 LangGraph interaction - Input: 1567, Output: 246, Total: 1813 tokens (3 requests) - Cost: $0.0012
+2026-02-03 10:11:35 - __main__ - INFO - [2572214738.py:220] - 
+📊 This turn: 1,567 in, 246 out, 1,813 total tokens (3 requests) - Cost: $0.0064
+2026-02-03 10:11:35 - __main__ - INFO - [2572214738.py:221] - 
+📊 Cumulative: 1,567 in, 246 out, 1,813 total tokens (3 requests) - Total cost: $0.0064
+2026-02-03 10:11:53 - httpx - INFO - [_client.py:1025] - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-03 10:11:53 - __main__ - INFO - [4226139259.py:71] - 🛡️ Content safety check passed - content is appropriate
+2026-02-03 10:11:54 - httpx - INFO - [_client.py:1025] - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-03 10:11:54 - __main__ - WARNING - [932153280.py:143] - ACCUWEATHER_API_KEY not set in environment variables. Weather tools may not work properly.
+2026-02-03 10:11:54 - __main__ - INFO - [932153280.py:152] - Connecting to MCP weather server...
+2026-02-03 10:11:54 - __main__ - ERROR - [932153280.py:164] - Failed to load MCP weather tools: fileno
+2026-02-03 10:11:54 - __main__ - INFO - [932153280.py:304] - No MCP weather tools available
+2026-02-03 10:11:55 - httpx - INFO - [_client.py:1025] - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-03 10:12:01 - httpx - INFO - [_client.py:1025] - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-03 10:12:01 - __main__ - INFO - [4226139259.py:71] - 🛡️ Content safety check passed - content is appropriate
+2026-02-03 10:12:02 - httpx - INFO - [_client.py:1025] - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-03 10:12:02 - __main__ - WARNING - [932153280.py:143] - ACCUWEATHER_API_KEY not set in environment variables. Weather tools may not work properly.
+2026-02-03 10:12:02 - __main__ - INFO - [932153280.py:152] - Connecting to MCP weather server...
+2026-02-03 10:12:02 - __main__ - ERROR - [932153280.py:164] - Failed to load MCP weather tools: fileno
+2026-02-03 10:12:02 - __main__ - INFO - [932153280.py:304] - No MCP weather tools available
+2026-02-03 10:12:03 - httpx - INFO - [_client.py:1025] - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-03 10:12:03 - __main__ - INFO - [2572214738.py:148] - 🔢 LangGraph interaction - Input: 1987, Output: 83, Total: 2070 tokens (3 requests) - Cost: $0.0011
+2026-02-03 10:12:03 - __main__ - INFO - [2572214738.py:220] - 
+📊 This turn: 1,987 in, 83 out, 2,070 total tokens (3 requests) - Cost: $0.0058
+2026-02-03 10:12:03 - __main__ - INFO - [2572214738.py:221] - 
+📊 Cumulative: 3,554 in, 329 out, 3,883 total tokens (6 requests) - Total cost: $0.0122
+2026-02-03 10:18:58 - core.logging_utils - INFO - [logging_utils.py:89] - Logging initialized - logs directory: c:\Users\kakao\Desktop\AI_Agent\Semantic Layer\logs
+2026-02-03 10:18:58 - core.logging_utils - INFO - [logging_utils.py:90] - Log rotation configured: max 10.0MB per file, keeping 5 backups
+2026-02-03 10:19:00 - __main__ - INFO - [3365683506.py:49] - Initializing SQLite checkpointer at: memory\langgraph_checkpoints.db
+2026-02-03 10:19:00 - __main__ - INFO - [3365683506.py:65] - SQLite checkpointer initialized successfully
+2026-02-03 10:19:00 - __main__ - INFO - [2572214738.py:28] - Persistent memory enabled - checkpointer initialized
+2026-02-03 10:19:00 - __main__ - INFO - [4226139259.py:22] - ContentSafetyAgent initialized.
+2026-02-03 10:19:00 - __main__ - INFO - [4226139259.py:90] - RoutingAgent initialized.
+2026-02-03 10:19:00 - __main__ - INFO - [4226139259.py:121] - LegalExpertAgent initialized.
+2026-02-03 10:19:00 - __main__ - INFO - [4226139259.py:161] - GeneralAgent initialized - tools will be created per run with state context.
+2026-02-03 10:19:00 - __main__ - INFO - [4226139259.py:220] - SafetyTerminationAgent initialized.
+2026-02-03 10:19:00 - __main__ - INFO - [2572214738.py:39] - OrchestratorAgent initialized with persistent memory.

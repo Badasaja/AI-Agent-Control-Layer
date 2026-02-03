@@ -6,11 +6,7 @@ from datetime import datetime
 from core import logging_utils
 from entity.process import Process
 
-"""
-execution.py
-목적 : 엔진 클래스(프로세스 Fire 절차) 정의함.
-"""
-
+# [Dependency] FiringResult
 @dataclass
 class FiringResult:
     task_id: str
@@ -20,6 +16,10 @@ class FiringResult:
     elapsed_ms: float = 0.0
     routes_triggered: int = 0
 
+# 사용자 정의 에러: 엔진 차원에서 토큰 자체를 거부할 때 사용
+class TokenIntegrityError(Exception):
+    pass
+
 class ExecEngine:
     """
     핵심 프로세스 실행 엔진
@@ -27,9 +27,11 @@ class ExecEngine:
     
     내부 절차 : 가드 체크 -> 입력 확인 -> 함수 실행 -> 아웃풋 확인 -> 토큰 갱신 -> 라우팅
     """
-    def __init__(self, token_validator):
+    def __init__(self, token_validator, ttl_seconds: int = 3600):
+        # Init 시점에 Token Content Validator 주입
         self.tv = token_validator
         self.logger = logging_utils.get_logger(f"Engine")
+        self.ttl_seconds = ttl_seconds
 
     def run_step(self, process: Process) -> Optional[FiringResult]:
         """
@@ -46,11 +48,18 @@ class ExecEngine:
 
         start_time = datetime.now()
 
-        # 2. 태스크 실행 전 가드 체크
+        # 3. 토큰 엔벨로프 Validation (콘텐츠 외부 무결성)
+        try:
+            self._validate_envelope(token)
+        except TokenIntegrityError as e:
+            self.logger.error(f"Token Integrity Check Failed: {e}")
+            return FiringResult(task.task_id, False, f"Token Integrity Fail: {str(e)}")
+
+        # 4. 태스크 실행 전 가드 체크
         if not self._check_guards(task, token):
             return FiringResult(task.task_id, False, message="Guard Condition Failed")
         
-        # 3. Input Spec Validation
+        # 5. 토큰 콘텐츠 Validation (콘텐츠 내부 무결성)
         try:
             self.tv.validate(token.content, task.input_spec_id)
         except Exception as e:
@@ -58,7 +67,7 @@ class ExecEngine:
             self.logger.warning(f"Task {task.task_id} Input Validation Failed: {e}")
             return FiringResult(task.task_id, False, f"Input Spec Fail: {str(e)}")
         
-        # 4. 동적 실행
+        # 6. 동적 실행
         # task.target은 해당 태스크에 할당된 function 혹은 API 실행을 의미
         try:
             func = self._resolve_function(task.target)
@@ -70,17 +79,17 @@ class ExecEngine:
             self.logger.error(f"Task {task.task_id} Execution Logic Failed: {e}", exc_info=True)
             return FiringResult(task.task_id, False, f"Runtime Execution Error: {str(e)}")
 
-        # 5. [Validator] Output Spec Validation
+        # 7. [Validator] Output Spec Validation
         try:
             self.tv.validate(output_content, task.output_spec_id)
         except Exception as e:
             self.logger.error(f"Task {task.task_id} Output Validation Failed: {e}", exc_info=True)
             return FiringResult(task.task_id, False, f"Output Spec Fail: {str(e)}")
 
-        # 6. Token Evolution (State Update)
+        # 8. Token Evolution (State Update)
         new_token = self._evolve_token(token, output_content, task)
 
-        # 7. Routing (PetriNet Propagation)
+        # 9. Routing (PetriNet Propagation)
         # Process에게 토큰 도착 알림 (Process 내부 로직으로 병합/대기 수행)
         routes_count = self._propagate_token(process, task, new_token)
 
@@ -148,3 +157,26 @@ class ExecEngine:
                 self.logger.info(f"Route Ignored: {current_task.task_id} -> {next_task.task_id}")
         
         return triggered
+
+    def _validate_envelope(self, token) -> None:
+            """
+            [Layer 1 Validation]
+            토큰의 내용물(Content)을 보기 전, 토큰 자체의 무결성(Envelope)을 검증.
+            실패 시 즉시 TokenIntegrityError 발생시키고 프로세스 중단.
+            """
+            # 1. 식별자 검증 (Traceability Check)
+            if not token.trace_id or not isinstance(token.trace_id, str):
+                raise TokenIntegrityError(f"Invalid Trace ID: {token.trace_id}")
+
+            # 2. 메타데이터 무결성 검증 (Metadata Sanity Check)
+            if token.topics:
+                for topic, score in token.topics.items():
+                    if not (0.0 <= score <= 1.0):
+                        raise TokenIntegrityError(f"Topic score out of range [0,1]: {topic}={score}")
+
+            # 3. 생존 시간 검증 (Time-to-Live Check)
+            elapsed = (datetime.now() - token.created_at).total_seconds()
+            if elapsed > self.ttl_seconds:
+                raise TokenIntegrityError(f"Token Expired (Zombie Token). Elapsed: {elapsed:.2f}s > Limit: {self.ttl_seconds}s")
+            
+            self.logger.info(f"[INFO] Token {token.trace_id} envelope is intact.")

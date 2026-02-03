@@ -187,6 +187,8 @@
   },
   "active": "7e4deb4aa3f38883",
   "lastOpenFiles": [
+    "구조도개괄.png",
+    "Pasted image 20260203110647.png",
     "engines/__pycache__/execution.cpython-310.pyc",
     "engines/__pycache__",
     "docs/AI에이전트제어)Entity Fields 정의.xlsx",
@@ -202,7 +204,6 @@
     "For Newcomers.ipynb",
     "entity/__pycache__/process.cpython-310.pyc",
     "notebooks/architecture/engine데피니션.ipynb",
-    "notebooks/architecture/process데피니션.ipynb",
     "Untitled.canvas",
     "logs/Log Depth 설계.md",
     "image.png",

@@ -35,6 +35,12 @@ class Token(BaseModel):
     # 2. Data Payload (실질적 점검대상)
     content : Dict[str, Any] = Field(default_factory = dict)
 
+    # 3. Topic attribute
+    topics : Dict[str, float] = Field(
+        default_factory=dict,
+        description = "토큰과 연관된 주제 및 해당 주제의 관련도 점수"
+    )
+
     # 99. 출력 Util
     def __repr__(self):
         """로그 출력 시 가독성을 위한 포맷팅"""
