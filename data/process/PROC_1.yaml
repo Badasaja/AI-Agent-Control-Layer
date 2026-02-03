@@ -1,0 +1,12 @@
+T1_LOAD: 
+  task_id: "inputurid"
+  description: "inputurdescription"
+  type: Tasktype.PYTHON_FUNC
+  target: Tools.tools:read_md
+  config: {"data_path" : "./data/input"}
+  layer: Layer
+  required_agent_roles: [AgentRole.CONSULTANT]
+  required_agent_types: [AgentRole.Tool]
+  guards: []
+  input_spec_id: "T1_input"
+  output_spec_id: "T1_output"

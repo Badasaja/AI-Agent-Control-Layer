@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "README.md",
+                "file": "Pasted image 20260203110647.png.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "README"
+              "title": "Pasted image 20260203110647.png"
             }
           }
         ]
@@ -187,23 +187,27 @@
   },
   "active": "7e4deb4aa3f38883",
   "lastOpenFiles": [
+    "notebooks/PROC_1/proc2_KB화.ipynb",
+    "notebooks/PROC_1/proc_2_KB화.ipynb",
+    "notebooks/PROC_1/proc1_load_file_and_store copy.ipynb",
+    "db/tb_cspn.db-journal",
+    "db/tb_cspn.db",
+    "data/tb_cspn.db",
+    "core/__pycache__/tokenDB.cpython-310.pyc",
+    "core/tokenDB.py",
+    "core/db_manager.py",
+    "tb_cspn_poc.db",
+    "tb_cspn.db-journal",
+    "data/input/금융연수원_여신심사 및 관리.md",
+    "data/input/금융연수원_소호 여신심사.md",
+    "README.md",
+    "Pasted image 20260203110647.png.md",
     "구조도개괄.png",
     "Pasted image 20260203110647.png",
-    "engines/__pycache__/execution.cpython-310.pyc",
-    "engines/__pycache__",
-    "docs/AI에이전트제어)Entity Fields 정의.xlsx",
-    "docs/~$AI에이전트제어)Entity Fields 정의.xlsx",
-    "docs",
-    "새 폴더",
     "Pasted image 20260130095712.png",
     "Pasted image 20260130130511.png",
     "Pasted image 20260130095636.png",
-    "README.md",
-    "requirements.txt",
     "proj.md",
-    "For Newcomers.ipynb",
-    "entity/__pycache__/process.cpython-310.pyc",
-    "notebooks/architecture/engine데피니션.ipynb",
     "Untitled.canvas",
     "logs/Log Depth 설계.md",
     "image.png",

@@ -68,7 +68,7 @@ class ExecEngine:
             return FiringResult(task.task_id, False, f"Input Spec Fail: {str(e)}")
         
         # 6. 동적 실행
-        # task.target은 해당 태스크에 할당된 function 혹은 API 실행을 의미
+        # task.target은 해당 태스크에 할당된 function 혹은 API 실행을 의미. 
         try:
             func = self._resolve_function(task.target)
             
@@ -79,7 +79,7 @@ class ExecEngine:
             self.logger.error(f"Task {task.task_id} Execution Logic Failed: {e}", exc_info=True)
             return FiringResult(task.task_id, False, f"Runtime Execution Error: {str(e)}")
 
-        # 7. [Validator] Output Spec Validation
+        # 7. [Validator] Output Spec Validation (토큰 출력 결과를 표준화된 형태로 검증)
         try:
             self.tv.validate(output_content, task.output_spec_id)
         except Exception as e:
@@ -87,7 +87,13 @@ class ExecEngine:
             return FiringResult(task.task_id, False, f"Output Spec Fail: {str(e)}")
 
         # 8. Token Evolution (State Update)
-        new_token = self._evolve_token(token, output_content, task)
+        # 기존 토큰의 history에 현재 task_id를 결합하여 신규 토큰 생성
+        try:
+            new_history = token.history + [task.task_id]
+            new_token = self._evolve_token(token, output_content, task, new_history)
+        except Exception as e:
+            self.logger.error(f"Token Evolution Failed: {e}")
+            return FiringResult(task.task_id, False, "Evolution Error")
 
         # 9. Routing (PetriNet Propagation)
         # Process에게 토큰 도착 알림 (Process 내부 로직으로 병합/대기 수행)
@@ -168,13 +174,21 @@ class ExecEngine:
             if not token.trace_id or not isinstance(token.trace_id, str):
                 raise TokenIntegrityError(f"Invalid Trace ID: {token.trace_id}")
 
-            # 2. 메타데이터 무결성 검증 (Metadata Sanity Check)
+            # 2. 출처 검증 (Source Check)
+            if not token.source_id or not isinstance(token.source_id, str):
+                raise TokenIntegrityError(f"Invalid Source ID: {token.source_id}")
+            
+            # 3. 이력 검증 (history check)
+            if not isinstance(token.history, list):
+                raise TokenIntegrityError(f"Invalid History Format: {token.history}")
+
+            # 4. 메타데이터 무결성 검증 (Metadata Sanity Check)
             if token.topics:
                 for topic, score in token.topics.items():
                     if not (0.0 <= score <= 1.0):
                         raise TokenIntegrityError(f"Topic score out of range [0,1]: {topic}={score}")
 
-            # 3. 생존 시간 검증 (Time-to-Live Check)
+            # 5. 생존 시간 검증 (Time-to-Live Check)
             elapsed = (datetime.now() - token.created_at).total_seconds()
             if elapsed > self.ttl_seconds:
                 raise TokenIntegrityError(f"Token Expired (Zombie Token). Elapsed: {elapsed:.2f}s > Limit: {self.ttl_seconds}s")

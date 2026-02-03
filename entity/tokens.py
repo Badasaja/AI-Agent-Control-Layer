@@ -27,6 +27,8 @@ class Token(BaseModel):
 
     # 1. 토큰 식별자
     trace_id : str = Field(..., description="고유 토큰 식별자")
+    source_id : str = Field(..., description="토큰 출처 식별자")
+    history: List[str] = Field(default_factory=list, description="방문한 Task ID 목록")
     created_at: datetime = Field(
         default_factory = datetime.now,
         description="토큰 생성 시점(System TimeStamp)"
